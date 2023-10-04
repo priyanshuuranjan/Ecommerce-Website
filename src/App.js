@@ -30,12 +30,12 @@ const App = () => {
         <GlobalStyle />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/about" element={<About />} />
+          <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/products" element={<Products />} />
           <Route exact path="cart" element={<Cart />} />
           <Route exact path="/singleproduct/:id" element={<SingleProduct />} />
-          <Route exact path="*" element={<Error />} /> */}
+          <Route exact path="*" element={<Error />} />
         </Routes>
       </Router>
     </ThemeProvider>
