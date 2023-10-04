@@ -12,6 +12,7 @@ import Error from "./pages/error/Error";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Footer from "./pages/footer/Footer";
+import Header from "./components/Header";
 
 const App = () => {
 
@@ -54,6 +55,7 @@ const App = () => {
           <Route exact path="/singleproduct/:id" element={<SingleProduct />} />
           <Route exact path="/*" element={<Error />} />
           <Route exact path="/footer" element={<Footer />} />
+          <Route exact path="/header" element={<Header />} />
         </Routes>
       </Router>
     </ThemeProvider>
