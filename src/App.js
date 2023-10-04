@@ -9,10 +9,12 @@ import Cart from "./pages/cart/Cart";
 import Products from "./pages/products/Products";
 import SingleProduct from "./pages/single/SingleProduct";
 import Error from "./pages/error/Error";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
   return (
     <Router>
+      <GlobalStyle/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
