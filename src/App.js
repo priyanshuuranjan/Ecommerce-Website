@@ -10,9 +10,19 @@ import Products from "./pages/products/Products";
 import SingleProduct from "./pages/single/SingleProduct";
 import Error from "./pages/error/Error";
 import { GlobalStyle } from "./GlobalStyle";
+import { ThemeProvider } from "styled-components";
 
 function App() {
+const theme = {
+  colors: {
+  bg: "#fff",
+},
+};
+
+
+
   return (
+    <ThemeProvider theme={theme}>
     <Router>
       <GlobalStyle/>
       <Routes>
@@ -25,6 +35,7 @@ function App() {
         <Route exact path="/*" element={<Error />} />
       </Routes>
     </Router>
+    </ThemeProvider>
   );
 }
 
