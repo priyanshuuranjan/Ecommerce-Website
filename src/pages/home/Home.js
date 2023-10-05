@@ -7,8 +7,6 @@ const Home = () => {
 
 const Wrapper = styled.section`
 ${'' /*   background-color: ${({theme}) => theme.color.bg}; */}
-  width:20rem;
-  height:20rem;
 `;
 
 export default Home;
