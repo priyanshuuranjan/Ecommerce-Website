@@ -3,10 +3,10 @@ import HeroSection from "../../components/HeroSection";
 
 const Home = () => {
   const data = {
-    name: "thapa store",
+    name: "Fertilizer store",
   };
 
   return <HeroSection myData={data} />;
 };
 
-export default Home;
+export default Home; 
