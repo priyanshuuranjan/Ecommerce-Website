@@ -33,6 +33,7 @@ const Nav = () => {
     }
 
     .mobile-navbar-btn {
+      //display nome se jb tk hm nhi chahte ki mera mobile wala part dikhe tb tk nhi dikhega
       display: none;
       background-color: transparent;
       cursor: pointer;
@@ -80,6 +81,8 @@ const Nav = () => {
       padding: 0.8rem 1.4rem;
     }
 
+    // 798 px k andar jb hm aayenge tb hmara ye phone wala cross dikhega ish liye hm inline-block kiye hai
+    
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       .mobile-navbar-btn {
         display: inline-block;
