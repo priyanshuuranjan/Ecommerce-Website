@@ -15,7 +15,6 @@ import Footer from "./pages/footer/Footer";
 import Header from "./components/Header";
 
 const App = () => {
-
   const theme = {
     colors: {
       heading: "rgb(24 24 29)",
@@ -41,12 +40,11 @@ const App = () => {
     },
   };
 
-  
   return (
     <ThemeProvider theme={theme}>
       <Router>
         <GlobalStyle />
-        <Header/>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
