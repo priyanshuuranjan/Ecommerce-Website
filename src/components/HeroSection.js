@@ -21,7 +21,9 @@ const HeroSection = ({ myData }) => {
               <Button>shop now</Button>
             </NavLink>
           </div>
+
           {/* our homepage image  */}
+          
           <div className="hero-section-image">
             <figure>
               <img
