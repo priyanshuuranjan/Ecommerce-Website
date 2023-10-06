@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../styles/Button";
-import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,8 +27,14 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Thapa Technical</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <h3>Kumar Fertilizer</h3>
+              <p>
+                Kumar Fertilizer Pvt Ltd, founded in 2002, is India's top online
+                agri shop offering a wide range of agricultural products such as
+                seeds, fertilizers, pesticides, and more. They provide the best
+                prices, excellent customer support, and free home delivery
+                across India.{" "}
+              </p>
             </div>
             <div className="footer-subscribe">
               <h3>Subscribe to get important updates</h3>
@@ -42,16 +48,24 @@ const Footer = () => {
               <h3>Follow Us</h3>
               <div className="footer-social--icons">
                 <div>
-                  <FaDiscord className="icons" />
+                  <a
+                    href="https://www.linkedin.com/in/priyanshu-ranjan-741462201/"
+                    target="_blank"
+                  >
+                    <FaLinkedin className="icons" />
+                  </a>
                 </div>
                 <div>
-                  <FaInstagram className="icons" />
+                  <a href="https://github.com/priyanshuuranjan" target="_blank">
+                    <FaGithub className="icons" />
+                  </a>
                 </div>
                 <div>
                   <a
-                    href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank">
-                    <FaYoutube className="icons" />
+                    href="https://www.instagram.com/priyanshu_singh45/"
+                    target="_blank"
+                  >
+                    <FaInstagram className="icons" />
                   </a>
                 </div>
               </div>
@@ -66,7 +80,8 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+                @ {new Date().getFullYear()} Kumar Fertilizer. All Rights
+                Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>
