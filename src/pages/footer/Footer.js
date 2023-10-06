@@ -29,11 +29,11 @@ const Footer = () => {
             <div className="footer-about">
               <h3>Kumar Fertilizer</h3>
               <p>
-                Kumar Fertilizer Pvt Ltd, founded in 2002, is India's top online
-                agri shop offering a wide range of agricultural products such as
-                seeds, fertilizers, pesticides, and more. They provide the best
-                prices, excellent customer support, and free home delivery
-                across India.{" "}
+                Kumar Fertilizer Pvt Ltd, founded in 2002, stands as India's top
+                online agricultural supplier. They offer a complete range of
+                farming essentials, such as seeds, fertilizers, pesticides,
+                plant growth regulators, irrigation, and farming tools, all at
+                the most competitive prices, with dedicated customer support.{" "}
               </p>
             </div>
             <div className="footer-subscribe">
@@ -80,7 +80,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @ {new Date().getFullYear()} Kumar Fertilizer. All Rights
+                @ {new Date().getFullYear()} <b>Kumar Fertilizer.</b> All Rights
                 Reserved
               </p>
               <div>

@@ -13,9 +13,14 @@ const HeroSection = ({ myData }) => {
             <p className="intro-data">Welcome to </p>
             <h1> {name} </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              atque temporibus veniam doloribus libero ad error omnis voluptates
-              animi! Suscipit sapiente.
+              As India's premier online agri shop, we provide everything you
+              need for successful farming from high-quality seeds, fertilizers,
+              and pesticides to plant growth regulators, irrigation solutions,
+              and cutting-edge farming tools. Our commitment lies in offering
+              you the market's best prices, along with dedicated customer
+              support to ensure your farming endeavors thrive. Explore our
+              extensive range and experience the difference with{" "}
+              <b>Kumar Fertilizer Pvt Ltd.</b>
             </p>
             <NavLink>
               <Button>shop now</Button>
@@ -23,7 +28,7 @@ const HeroSection = ({ myData }) => {
           </div>
 
           {/* our homepage image  */}
-          
+
           <div className="hero-section-image">
             <figure>
               <img
