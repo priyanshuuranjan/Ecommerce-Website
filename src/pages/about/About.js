@@ -13,7 +13,7 @@ const About = () => {
     <>
       {myName}
       <HeroSection myData={data} />
-    </>dsvdds
+    </>
   );
 };
 
