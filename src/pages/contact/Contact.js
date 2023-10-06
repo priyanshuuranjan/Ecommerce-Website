@@ -36,16 +36,15 @@ const Contact = () => {
   return (
     <Wrapper>
       <h2 className="common-heading">Contact page</h2>
-
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d891.472951549985!2d84.85279782938002!3d26.65194636556805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1696551202680!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1071.391461520351!2d84.85209386960904!3d26.65207009715872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39933733881dcadf%3A0x205f0af7725a632d!2sVirendra%20Singh%20fertilizer%20shop!5e1!3m2!1sen!2sin!4v1696626189327!5m2!1sen!2sin"
         width="100%"
         height="400"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"></iframe>
-
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
       <div className="container">
         <div className="contact-form">
           <form
