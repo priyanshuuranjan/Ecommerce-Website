@@ -7,6 +7,17 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 const Services = () => {
   return (
     <Wrapper>
+      <h2 style={{
+          textAlign: "center",
+          fontSize: "30px",
+          color: "#1a1b18",
+          fontFamily: "Outfit, sans-serif",
+          marginBottom: "10px",
+        }}
+        
+      >
+        Why Kumar Fertilizer ?
+      </h2>
       <div className="container">
         <div className="grid grid-three-column">
           <div className="services-1">
@@ -89,7 +100,7 @@ const Wrapper = styled.section`
       }
     }
   }
-
+  
   h3 {
     margin-top: 1.4rem;
     font-size: 2rem;
