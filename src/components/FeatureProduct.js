@@ -1,6 +1,6 @@
 import { useProductContext } from "../context/productContext";
 import styled from "styled-components";
-import Products from "../pages/products/Products";
+import Product from "../components/Product";
 
 const FeatureProduct = () => {
   const { isLoading, featureProducts } = useProductContext();
@@ -16,7 +16,7 @@ const FeatureProduct = () => {
         <div className="common-heading">Our Feature Services</div>
         <div className="grid grid-three-column">
           {featureProducts.map((curElem) => {
-            return <Products key={curElem.id} {...curElem} />;
+            return <Product key={curElem.id} {...curElem} />;
           })}
         </div>
       </div>
