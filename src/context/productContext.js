@@ -4,7 +4,8 @@ import  reducer  from "../reducer/productReducer"
 
 const AppContext = createContext();
 
-const API = "https://shop-api-ec-git-master-priyanshu-ranjans-projects.vercel.app/products";
+const API = "https://api.pujakaitem.com/api/products";
+
 const initialState = {
   isLoading: false,
   isError: false,
