@@ -46,6 +46,12 @@ const Wrapper = styled.section`
   .container {
     max-width: 120rem;
   }
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .7em; /* Adjust the gap as needed */
+    flex-wrap: nowrap; /* Ensure items stay in the same row */
 
   figure {
     width: auto;
