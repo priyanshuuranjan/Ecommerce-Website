@@ -1,13 +1,30 @@
-import { useProductContext } from "../context/productContext";
 import styled from "styled-components";
 import Product from "../components/Product";
+
+const featureProducts = [
+  {
+    id: 1,
+    name: "Fertilisers",
+    image: "/images/fertilizer.jpg",
+  },
+  {
+    id: 1,
+    name: "Vegetable Seeds",
+    image: "/images/seed.jpg",
+  },
+  {
+    id: 3,
+    name: "Equipment",
+    image: "/images/equipment.jpg",
+  },
+  {
+    id: 4,
+    name: "Pesticide",
+    image: "/images/pesticide.jpg",
+  },
+];
+
 const FeatureProduct = () => {
-  const { isLoading, featureProducts } = useProductContext();
-
-  if (isLoading) {
-    return <div> ......Loading </div>;
-  }
-
   return (
     <Wrapper className="section">
       <div className="container">
@@ -22,7 +39,6 @@ const FeatureProduct = () => {
     </Wrapper>
   );
 };
-
 const Wrapper = styled.section`
   padding: 9rem 0;
   background-color: ${({ theme }) => theme.colors.bg};

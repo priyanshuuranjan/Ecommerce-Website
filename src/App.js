@@ -7,7 +7,7 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Cart from "./pages/cart/Cart";
 import Products from "./pages/products/Products";
-import SingleProduct from "./pages/single/SingleProduct";
+// import SingleProduct from "./pages/single/SingleProduct";
 import Error from "./pages/error/Error";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
@@ -51,7 +51,7 @@ const App = () => {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/products" element={<Products />} />
           <Route exact path="cart" element={<Cart />} />
-          <Route exact path="/singleproduct/:id" element={<SingleProduct />} />
+          {/* <Route exact path="/singleproduct/:id" element={<SingleProduct />} /> */}
           <Route exact path="/*" element={<Error />} />
           <Route exact path="/footer" element={<Footer />} />
         </Routes>
