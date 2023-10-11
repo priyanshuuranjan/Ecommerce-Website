@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Product = (curElem) => {
   const { id, name, image } = curElem;
   return (
-    <NavLink to={`/singleproduct/${name}`}>
+    <NavLink to={`/product/${name}`}>
       <div className="card">
         <figure>
           <img src={image} alt={name} />

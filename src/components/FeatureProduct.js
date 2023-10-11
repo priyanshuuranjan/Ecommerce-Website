@@ -35,7 +35,7 @@ const FeatureProduct = () => {
           {featureProducts.map((curElem) => {
             return (
               <Link
-                to={`/${curElem.name.toLowerCase()}`} // Define the link based on the product name
+                to={`/${curElem.name.toLowerCase()}`} 
                 key={curElem.id}
               >
                 <Product {...curElem} />
