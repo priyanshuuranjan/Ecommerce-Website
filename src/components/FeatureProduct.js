@@ -1,25 +1,26 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import Product from "../components/Product";
 
 const featureProducts = [
   {
     id: 1,
-    name: "Fertilisers",
+    name: "fertilizers",
     image: "/images/fertilizer.jpg",
   },
   {
     id: 1,
-    name: "Vegetable Seeds",
+    name: "vegetable Seeds",
     image: "/images/seed.jpg",
   },
   {
     id: 3,
-    name: "Equipment",
+    name: "equipment",
     image: "/images/equipment.jpg",
   },
   {
     id: 4,
-    name: "Pesticide",
+    name: "pesticide",
     image: "/images/pesticide.jpg",
   },
 ];
@@ -32,13 +33,24 @@ const FeatureProduct = () => {
         <div className="common-heading">Our Feature Services</div>
         <div className="grid grid-three-column">
           {featureProducts.map((curElem) => {
-            return <Product key={curElem.id} {...curElem} />;
+            return (
+              <Link
+                to={`/${curElem.name.toLowerCase()}`} // Define the link based on the product name
+                key={curElem.id}
+              >
+                <Product {...curElem} />
+              </Link>
+            );
           })}
         </div>
       </div>
     </Wrapper>
   );
 };
+/* takes this object and spreads its properties into individual props for the Product component. So,
+ it is equivalent to manually passing each property as follows: 
+<Product {...curElem} /> this is equal to <Product id={curElem.id} name={curElem.name} image={curElem.image} />
+ */
 const Wrapper = styled.section`
   padding: 9rem 0;
   background-color: ${({ theme }) => theme.colors.bg};

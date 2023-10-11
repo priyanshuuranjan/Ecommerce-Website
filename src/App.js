@@ -14,6 +14,7 @@ import { ThemeProvider } from "styled-components";
 import Footer from "./pages/footer/Footer";
 import Header from "./components/Header";
 
+
 const App = () => {
   const theme = {
     colors: {
