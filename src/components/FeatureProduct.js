@@ -50,8 +50,8 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .7em; /* Adjust the gap as needed */
-    flex-wrap: nowrap; /* Ensure items stay in the same row */
+    gap: .7em; 
+    flex-wrap: nowrap; 
 
   figure {
     width: auto;
