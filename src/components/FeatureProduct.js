@@ -4,22 +4,22 @@ import Product from "../components/Product";
 
 const featureProducts = [
   {
-    id: 1,
+    id: "fertilizer",
     name: "fertilizers",
     image: "/images/fertilizer.jpg",
   },
   {
-    id: 1,
+    id: "seed",
     name: "vegetable Seeds",
     image: "/images/seed.jpg",
   },
   {
-    id: 3,
+    id: "equipment",
     name: "equipment",
     image: "/images/equipment.jpg",
   },
   {
-    id: 4,
+    id: "pesticide",
     name: "pesticide",
     image: "/images/pesticide.jpg",
   },

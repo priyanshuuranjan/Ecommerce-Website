@@ -1,8 +1,7 @@
-import React from "react";
 import HeroSection from "../../components/HeroSection";
 import Services from "../../components/Services";
 import FeatureProduct from "../../components/FeatureProduct";
-// import Trusted from "../../components/Trusted";
+import Fertilizers from "../../components/fertilizers"; // Make sure to use the correct component name
 
 const Home = () => {
   const data = {
@@ -13,10 +12,11 @@ const Home = () => {
     <>
       <HeroSection myData={data} />
       <FeatureProduct />
+
       <Services />
-      {/* <Trusted /> */}
+      <Fertilizers />
     </>
   );
 };
 
-export default Home; 
+export default Home;
