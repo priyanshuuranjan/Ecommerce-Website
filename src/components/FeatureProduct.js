@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link,useNavigate } from "react-router-dom"; // Import Link from react-router-dom
 import Product from "../components/Product";
+
 
 const featureProducts = [
   {
@@ -25,27 +26,32 @@ const featureProducts = [
   },
 ];
 
+
 const FeatureProduct = () => {
+  const navigate = useNavigate();
+
+function navigateToProduct(category) {
+  navigate(`/${category}`);
+}
   return (
     <Wrapper className="section">
-      <div className="container">
-        <div className="intro-data">Check Now!</div>
-        <div className="common-heading">Our Feature Services</div>
-        <div className="grid grid-three-column">
-          {featureProducts.map((curElem) => {
-            return (
-              <Link
-                to={`/${curElem.name.toLowerCase()}`} 
-                key={curElem.id}
-              >
-                <Product {...curElem} />
-              </Link>
-            );
-          })}
-        </div>
+    <div className="container">
+      <div className="intro-data">Check Now!</div>
+      <div className="common-heading">Our Feature Services</div>
+      <div className="grid grid-three-column">
+        {featureProducts.map((curElem) => {
+          return (
+            <Product
+              key={curElem.id}
+              {...curElem}
+              onClick={() => navigateToProduct(curElem.id)}
+            />
+          );
+        })}
       </div>
-    </Wrapper>
-  );
+    </div>
+  </Wrapper>
+);
 };
 /* takes this object and spreads its properties into individual props for the Product component. So,
  it is equivalent to manually passing each property as follows: 

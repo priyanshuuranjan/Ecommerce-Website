@@ -1,25 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
-const Product = (curElem) => {
-  const { id, name, image } = curElem;
+const Product = ({ id, name, image, onClick }) => {
   return (
-    <NavLink to={`/product/${name}`}>
-      <div className="card">
-        <figure>
-          <img src={image} alt={name} />
-          {/* <figcaption className="caption">{somedata}</figcaption> */}
-        </figure>
+    <div onClick={onClick}>
+    
+        <div className="card">
+          <figure>
+            <img src={image} alt={name} />
+            {/* <figcaption className="caption">{somedata}</figcaption> */}
+          </figure>
 
-        <div className="card-data">
-          <div className="card-data-flex">
-            <h3>{name}</h3>
-            
+          <div className="card-data">
+            <div className="card-data-flex">
+              <h3>{name}</h3>
+            </div>
           </div>
         </div>
-      </div>
-    </NavLink>
+    
+    </div>
   );
 };
 

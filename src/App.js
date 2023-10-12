@@ -13,7 +13,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Footer from "./pages/footer/Footer";
 import Header from "./components/Header";
-import fertilizers from "./components/fertilizers";
+import Fertilizer from "./components/Fertilizer";
 
 const App = () => {
   const theme = {
@@ -55,8 +55,7 @@ const App = () => {
           {/* <Route exact path="/singleproduct/:id" element={<SingleProduct />} /> */}
           <Route exact path="/*" element={<Error />} />
           <Route exact path="/footer" element={<Footer />} />
-          <Route path="/home" exact component={Home} />
-        <Route path="/product/fertilizer" component={fertilizers} />
+          <Route exact path="/fertilizer" element={<Fertilizer />} />
         </Routes>
         <Footer />
       </Router>
