@@ -4,9 +4,22 @@ import Cardsdata from "./CardsData";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./style.css";
+import { useDispatch } from 'react-redux';
+
 const Fertilizer = () => {
   const [data, setData] = useState(Cardsdata);
-  console.log(data);
+  // console.log(data);
+
+  const dispatch = useDispatch();
+
+  const dispatch = useDispatch();
+
+
+  const send = (e)=>{
+    // console.log(e);
+    dispatch(ADD(e));
+  }
+
   return (
     <Wrapper className="section">
       <div className="container mt-3">
@@ -32,7 +45,7 @@ const Fertilizer = () => {
                     <div className="button_div d-flex justify-content-center">
                       <Button
                         variant="primary"
-                        // onClick={()=> send(element)}
+                        onClick={()=> send(element)}
                         className="col-lg-12"
                       >
                         Add to Cart

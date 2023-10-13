@@ -2,21 +2,18 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "./Nav";
-import { DLT } from '../redux/actions/action';
-import { useDispatch, useSelector } from 'react-redux';
-
+import { DLT } from "../redux/actions/action";
+import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
+  const [price, setPrice] = useState(0);
+  // console.log(price);
 
-  const [price,setPrice] = useState(0);
-    // console.log(price);
+  const getdata = useSelector((state) => state.cartreducer.carts);
+  console.log(getdata);
 
-        const getdata = useSelector((state)=> state.cartreducer.carts);
-        console.log(getdata);
+  const dispatch = useDispatch();
 
-        const dispatch = useDispatch();
-
- 
   return (
     <MainHeader>
       {/* Navlink -->> it is just like <a href="#"></a> but ye page ko reload nhi krene deta hai or ye react router dom se imported hai  */}
