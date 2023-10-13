@@ -3,32 +3,44 @@ import styled from "styled-components";
 import Cardsdata from "./CardsData";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-
+import "./style.css";
 const Fertilizer = () => {
   const [data, setData] = useState(Cardsdata);
   console.log(data);
   return (
     <Wrapper className="section">
-      <div className="container">
-        <div className="intro-data">Check Now!</div>
-        <div className="common-heading">Our Feature Services</div>
-        <div className="grid grid-three-column">
+      <div className="container mt-3">
+        <h2 className="text-center">Add to Cart Projects</h2>
+
+        <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
           {data.map((element, id) => {
             return (
-              <Card style={{ width: '22rem',border:"none" }} className="mx-2 mt-4 card_style">
-              <Card.Img variant="top" src={element.imgdata} style={{height:"16rem"}} className="mt-3" />
-                <Card.Body>
-                <Card.Title>{element.rname}</Card.Title>
-                <Card.Text>
-                    Price : ₹ {element.price}
-                    </Card.Text>
+              <>
+                <Card
+                  style={{ width: "22rem" }}
+                  className="mx-2 mt-4 card_style"
+                >
+                  <Card.Img
+                    variant="top"
+                    src={element.imgdata}
+                    style={{ height: "16rem" }}
+                    className="mt-3"
+                  />
+                  <Card.Body>
+                    <Card.Title>{element.rname}</Card.Title>
+                    <Card.Text>Price : ₹ {element.price}</Card.Text>
                     <div className="button_div d-flex justify-content-center">
-                    <Button variant="primary"  
-                      // onClick={()=> send(element)}
-                     className='col-lg-12'>Add to Cart</Button>
+                      <Button
+                        variant="primary"
+                        // onClick={()=> send(element)}
+                        className="col-lg-12"
+                      >
+                        Add to Cart
+                      </Button>
                     </div>
-                </Card.Body>
-              </Card>
+                  </Card.Body>
+                </Card>
+              </>
             );
           })}
         </div>
@@ -44,6 +56,20 @@ const Wrapper = styled.section`
   .container {
     max-width: 120rem;
   }
+  .card_style:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+ 
+  .card_image:hover {
+    
+    transform: scale(1.2);
+    transition: transform 0.4s;
+    
+  }
+  
+  
 
   figure {
     width: auto;
@@ -67,7 +93,7 @@ const Wrapper = styled.section`
     &:hover::after {
       width: 100%;
     }
-    &:hover img {
+    &:hover Card.Img {
       transform: scale(1.2);
     }
     img {
