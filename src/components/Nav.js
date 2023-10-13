@@ -3,10 +3,30 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
+import { DLT } from "../redux/actions/action";
+import { useDispatch, useSelector } from "react-redux";
+import Table from "react-bootstrap/esm/Table";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 const Nav = () => {
- 
   const [menuIcon, setMenuIcon] = useState();
+
+  const [price, setPrice] = useState(0);
+  // console.log(price);
+
+  const getdata = useSelector((state) => state.cartreducer.carts);
+  console.log(getdata);
+
+  const dispatch = useDispatch();
+
+  // working on card menu when we add any item then it show that particular items
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
   const Nav = styled.nav`
     .navbar-lists {
@@ -208,10 +228,9 @@ const Nav = () => {
           <li>
             <NavLink to="/cart" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
-              <span className="cart-total--item">45 </span>
+              <span className="cart-total--item">{getdata.length} </span>
             </NavLink>
           </li>
-          
         </ul>
 
         {/* two button for open and close of menu */}

@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "./Nav";
-import { DLT } from "../redux/actions/action";
-import { useDispatch, useSelector } from "react-redux";
+// import { DLT } from "../redux/actions/action";
+// import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
 
-  
-  const [price, setPrice] = useState(0);
-  // console.log(price);
 
-  const getdata = useSelector((state) => state.cartreducer.carts);
-  console.log(getdata);
+  // const [price, setPrice] = useState(0);
+  // // console.log(price);
 
-  const dispatch = useDispatch();
+  // const getdata = useSelector((state) => state.cartreducer.carts);
+  // console.log(getdata);
+
+  // const dispatch = useDispatch();
 
   return (
     <MainHeader>

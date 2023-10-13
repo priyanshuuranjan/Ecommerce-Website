@@ -14,7 +14,7 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "equipment",
+    id: "hello",
     name: "pesi Adda",
     imgdata:
       "https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg?output-format=webp",
