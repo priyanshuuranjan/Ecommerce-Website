@@ -33,10 +33,7 @@ const Fertilizer = () => {
     </Wrapper>
   );
 };
-/* takes this object and spreads its properties into individual props for the Product component. So,
- it is equivalent to manually passing each property as follows: 
-<Product {...curElem} /> this is equal to <Product id={curElem.id} name={curElem.name} image={curElem.image} />
- */
+
 const Wrapper = styled.section`
   padding: 9rem 0;
   background-color: ${({ theme }) => theme.colors.bg};
@@ -83,7 +80,6 @@ const Wrapper = styled.section`
       right: 10%;
       text-transform: uppercase;
       background-color: ${({ theme }) => theme.colors.bg};
-      color: ${({ theme }) => theme.colors.helper};
       padding: 0.8rem 2rem;
       font-size: 1.2rem;
       border-radius: 2rem;
@@ -116,7 +112,7 @@ const Wrapper = styled.section`
 
     .btn {
       margin: 2rem auto;
-      background-color: rgb(0 0 0 / 0%);
+
       border: 0.1rem solid rgb(98 84 243);
       display: flex;
       justify-content: center;
