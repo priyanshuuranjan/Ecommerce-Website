@@ -27,7 +27,7 @@ const Fertilizer = () => {
                     className="mt-3"
                   />
                   <Card.Body>
-                    <Card.Title>{element.rname}</Card.Title>
+                    <Card.Title>{element.name}</Card.Title>
                     <Card.Text>Price : ₹ {element.price}</Card.Text>
                     <div className="button_div d-flex justify-content-center">
                       <Button
