@@ -1,6 +1,11 @@
+//! defining the state in Array k form me store krange hm data ko
+
 const INIT_STATE = {
   carts: [],
 };
+
+// agr action ka type  ADD_CART hua to hm return krwayenge new data ko store krwayenge
+
 
 export const cartreducer = (state = INIT_STATE, action) => {
   switch (action.type) {
