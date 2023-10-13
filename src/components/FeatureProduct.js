@@ -64,12 +64,6 @@ const Wrapper = styled.section`
   .container {
     max-width: 120rem;
   }
-  .grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: .7em; 
-    flex-wrap: nowrap; 
 
   figure {
     width: auto;

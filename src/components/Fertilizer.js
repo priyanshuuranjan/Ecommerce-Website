@@ -1,15 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import Cardsdata from "./CardsData";
 
-export default function Fertilizer() {
-  return (
-    <div>
-      <h3>
-        Fertilizer Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Numquam repudiandae dolores consequuntur nostrum amet in, earum error
-        molestiae corporis excepturi doloribus eveniet! Iste fugit cum ducimus
-        perferendis earum? Repudiandae ullam quis eum adipisci vero totam at
-        veniam tenetur reprehenderit quas!
-      </h3>
-    </div>
-  );
-}
+const Fertilizer = () => {
+  const [data, setData] = useState(Cardsdata);
+  console.log(data);
+  return <div>Fertilizer</div>;
+};
+export default Fertilizer;
