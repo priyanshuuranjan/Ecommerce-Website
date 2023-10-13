@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Cardsdata from "./CardsData";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 const Fertilizer = () => {
   const [data, setData] = useState(Cardsdata);
   console.log(data);
   return (
     <Wrapper className="section">
-    <div className="container">
-      <div className="intro-data">Check Now!</div>
-      <div className="common-heading">Our Feature Services</div>
-      <div className="grid grid-three-column">
-        {data.map((element,id) => {
-          return (
-            <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          );
-        })}
+      <div className="container">
+        <div className="intro-data">Check Now!</div>
+        <div className="common-heading">Our Feature Services</div>
+        <div className="grid grid-three-column">
+          {data.map((element, id) => {
+            return (
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
+            );
+          })}
+        </div>
       </div>
-    </div>
-  </Wrapper>
-);
+    </Wrapper>
+  );
 };
 /* takes this object and spreads its properties into individual props for the Product component. So,
  it is equivalent to manually passing each property as follows: 
