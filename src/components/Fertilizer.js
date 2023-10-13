@@ -15,15 +15,18 @@ const Fertilizer = () => {
         <div className="grid grid-three-column">
           {data.map((element, id) => {
             return (
-              <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+              <Card style={{ width: '22rem',border:"none" }} className="mx-2 mt-4 card_style">
+              <Card.Img variant="top" src={element.imgdata} style={{height:"16rem"}} className="mt-3" />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                <Card.Title>{element.rname}</Card.Title>
+                <Card.Text>
+                    Price : ₹ {element.price}
+                    </Card.Text>
+                    <div className="button_div d-flex justify-content-center">
+                    <Button variant="primary"  
+                      // onClick={()=> send(element)}
+                     className='col-lg-12'>Add to Cart</Button>
+                    </div>
                 </Card.Body>
               </Card>
             );
@@ -36,7 +39,7 @@ const Fertilizer = () => {
 
 const Wrapper = styled.section`
   padding: 9rem 0;
-  background-color: ${({ theme }) => theme.colors.bg};
+  // background-color: ${({ theme }) => theme.colors.bg};
 
   .container {
     max-width: 120rem;
