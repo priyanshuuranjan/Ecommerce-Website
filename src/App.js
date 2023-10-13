@@ -14,6 +14,7 @@ import { ThemeProvider } from "styled-components";
 import Footer from "./pages/footer/Footer";
 import Header from "./components/Header";
 import Fertilizer from "./components/Fertilizer";
+import ProductDetail from "./components/ProductDetail";
 
 const App = () => {
   const theme = {
@@ -56,6 +57,7 @@ const App = () => {
           <Route exact path="/*" element={<Error />} />
           <Route exact path="/footer" element={<Footer />} />
           <Route exact path="/fertilizer" element={<Fertilizer />} />
+          <Route path='/cart/:id' element={<ProductDetail />} />
         </Routes>
         <Footer />
       </Router>
