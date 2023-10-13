@@ -6,6 +6,8 @@ import { DLT } from "../redux/actions/action";
 import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
+
+  
   const [price, setPrice] = useState(0);
   // console.log(price);
 

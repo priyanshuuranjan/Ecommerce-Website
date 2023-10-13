@@ -4,18 +4,21 @@ import Cardsdata from "./CardsData";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./style.css";
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
+import { ADD } from "../redux/actions/action";
 
 const Fertilizer = () => {
+
+  
   const [data, setData] = useState(Cardsdata);
   // console.log(data);
 
+  const dispatch = useDispatch();
 
-
-  const send = (e)=>{
-    console.log(e);
-    
-  }
+  const send = (e) => {
+    // console.log(e);
+    dispatch(ADD(e));
+  };
 
   return (
     <Wrapper className="section">
@@ -42,7 +45,7 @@ const Fertilizer = () => {
                     <div className="button_div d-flex justify-content-center">
                       <Button
                         variant="primary"
-                        onClick={()=> send(element)}
+                        onClick={() => send(element)}
                         className="col-lg-12"
                       >
                         Add to Cart
@@ -71,15 +74,11 @@ const Wrapper = styled.section`
     transform: scale(1.05);
     transition: transform 0.3s, box-shadow 0.3s;
   }
- 
+
   .card_image:hover {
-    
     transform: scale(1.2);
     transition: transform 0.4s;
-    
   }
-  
-  
 
   figure {
     width: auto;
