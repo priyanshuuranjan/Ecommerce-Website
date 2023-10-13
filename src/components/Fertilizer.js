@@ -10,14 +10,11 @@ const Fertilizer = () => {
   const [data, setData] = useState(Cardsdata);
   // console.log(data);
 
-  const dispatch = useDispatch();
-
-  const dispatch = useDispatch();
 
 
   const send = (e)=>{
-    // console.log(e);
-    dispatch(ADD(e));
+    console.log(e);
+    
   }
 
   return (
