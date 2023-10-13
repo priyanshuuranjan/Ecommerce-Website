@@ -27,6 +27,9 @@ const Nav = () => {
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const Nav = styled.nav`
     .navbar-lists {
@@ -52,9 +55,11 @@ const Nav = () => {
         }
       }
     }
+   
 
-    .mobile-navbar-btn {
-      //display nome se jb tk hm nhi chahte ki mera mobile wala part dikhe tb tk nhi dikhega
+    //display nome se jb tk hm nhi chahte ki mera mobile wala part dikhe tb tk nhi dikhega
+  
+     .mobile-navbar-btn {
       display: none;
       background-color: transparent;
       cursor: pointer;
@@ -91,6 +96,8 @@ const Nav = () => {
         background-color: ${({ theme }) => theme.colors.helper};
       }
     }
+    
+  }
 
     .user-login--name {
       text-transform: capitalize;
@@ -155,7 +162,7 @@ const Nav = () => {
         opacity: 1;
         transform: translateX(0);
         z-index: 999;
-        transform-origin: right;
+        transform-origin: left;
         transition: all 3s linear;
 
         .navbar-link {
@@ -226,9 +233,31 @@ const Nav = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/cart" className="navbar-link cart-trolley--link">
+            <NavLink to="" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
-              <span className="cart-total--item">{getdata.length} </span>
+              <span
+                className="cart-total--item"
+                id="basic-button"
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+              >
+                {getdata.length}
+              </span>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
             </NavLink>
           </li>
         </ul>
