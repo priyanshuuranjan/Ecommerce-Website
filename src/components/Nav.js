@@ -3,20 +3,9 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-
 
 const Nav = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+ 
   const [menuIcon, setMenuIcon] = useState();
 
   const Nav = styled.nav`
@@ -94,7 +83,7 @@ const Nav = () => {
     }
 
     // 798 px k andar jb hm aayenge tb hmara ye phone wala cross dikhega ish liye hm inline-block kiye hai
-    
+
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       .mobile-navbar-btn {
         display: inline-block;
@@ -217,25 +206,12 @@ const Nav = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="" className="navbar-link cart-trolley--link"
-             >
+            <NavLink to="/cart" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
               <span className="cart-total--item">45 </span>
             </NavLink>
           </li>
-          <Menu
-        id="basic-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
-      >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
-      </Menu>
+          
         </ul>
 
         {/* two button for open and close of menu */}
