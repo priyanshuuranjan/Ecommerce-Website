@@ -1,7 +1,7 @@
 // Import
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
@@ -44,23 +44,21 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <GlobalStyle />
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/products" element={<Products />} />
-          {/* <Route exact path="cart" element={<Cart />} /> */}
-          {/* <Route exact path="/singleproduct/:id" element={<SingleProduct />} /> */}
-          <Route exact path="/*" element={<Error />} />
-          <Route exact path="/footer" element={<Footer />} />
-          <Route exact path="/fertilizer" element={<Fertilizer />} />
-          <Route exact path='/productDetails' element={<ProductDetail />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <GlobalStyle />
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/products" element={<Products />} />
+        {/* <Route exact path="cart" element={<Cart />} /> */}
+        {/* <Route exact path="/singleproduct/:id" element={<SingleProduct />} /> */}
+        <Route exact path="/*" element={<Error />} />
+        <Route exact path="/footer" element={<Footer />} />
+        <Route exact path="/fertilizer" element={<Fertilizer />} />
+        <Route exact path="/productDetails" element={<ProductDetail />} />
+      </Routes>
+      <Footer />
     </ThemeProvider>
   );
 };
