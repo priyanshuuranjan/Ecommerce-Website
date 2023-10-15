@@ -241,16 +241,18 @@ const Nav = () => {
                 {getdata.length}
               </span>
               <Menu
-              style={{marginTop:60,marginLeft:1790}}
+              style={{marginTop:60,marginLeft:1700,position:"absolute",width:"40vh",fontSize:23,cursor:"pointer"}}
                 id="basic-menu"
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                MenuListProps={{
-                  "aria-labelledby": "basic-button",
-                }}
+                  
+                // MenuListProps={{
+                //   "aria-labelledby": "basic-button",
+                // }}
               >
-                <p>Empty</p>
+                 <p style={{fontSize:22}}>Your carts is empty</p>
+                    <img src="./images/giphy.gif" alt="" className='emptycart_img' style={{width:"15rem",padding:10}} />
               </Menu>
             </NavLink>
           </li>
