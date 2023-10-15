@@ -10,7 +10,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
 const Nav = () => {
-  const [menuIcon, setMenuIcon] = useState();
+  const [menuIcon, setMenuIcon] = useState(false);
 
   const [price, setPrice] = useState(0);
   // console.log(price);
@@ -36,6 +36,7 @@ const Nav = () => {
       display: flex;
       gap: 4.8rem;
       align-items: center;
+         z-index: 9999;
 
       .navbar-link {
         &:link,
@@ -55,11 +56,8 @@ const Nav = () => {
         }
       }
     }
-   
 
-    //display nome se jb tk hm nhi chahte ki mera mobile wala part dikhe tb tk nhi dikhega
-  
-     .mobile-navbar-btn {
+    .mobile-navbar-btn {
       display: none;
       background-color: transparent;
       cursor: pointer;
@@ -96,8 +94,6 @@ const Nav = () => {
         background-color: ${({ theme }) => theme.colors.helper};
       }
     }
-    
-  }
 
     .user-login--name {
       text-transform: capitalize;
@@ -108,8 +104,6 @@ const Nav = () => {
       font-size: 1.4rem;
       padding: 0.8rem 1.4rem;
     }
-
-    // 798 px k andar jb hm aayenge tb hmara ye phone wala cross dikhega ish liye hm inline-block kiye hai
 
     @media (max-width: ${({ theme }) => theme.media.mobile}) {
       .mobile-navbar-btn {
@@ -122,6 +116,7 @@ const Nav = () => {
           color: ${({ theme }) => theme.colors.black};
         }
       }
+      
 
       .active .mobile-nav-icon {
         display: none;
@@ -138,7 +133,7 @@ const Nav = () => {
       }
 
       .navbar-lists {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -161,7 +156,7 @@ const Nav = () => {
         visibility: visible;
         opacity: 1;
         transform: translateX(0);
-        z-index: 999;
+        z-index: 9999;
         transform-origin: left;
         transition: all 3s linear;
 
@@ -194,13 +189,13 @@ const Nav = () => {
 
   return (
     <Nav>
-      <div className={menuIcon ? "navbar active" : "navbar"}>
+      <div className={menuIcon ? " active" : "navbar"}>
         <ul className="navbar-lists">
           <li>
             <NavLink
               to="/"
               className="navbar-link "
-              onClick={() => setMenuIcon(false)}
+              onClick={() => setMenuIcon(false )}
             >
               Home
             </NavLink>
@@ -246,6 +241,7 @@ const Nav = () => {
                 {getdata.length}
               </span>
               <Menu
+              style={{marginTop:60,marginLeft:1790}}
                 id="basic-menu"
                 anchorEl={anchorEl}
                 open={open}
@@ -254,9 +250,7 @@ const Nav = () => {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                <p>Empty</p>
               </Menu>
             </NavLink>
           </li>
@@ -264,7 +258,7 @@ const Nav = () => {
 
         {/* two button for open and close of menu */}
         <div className="mobile-navbar-btn">
-          <CgMenu
+        <CgMenu
             name="menu-outline"
             className="mobile-nav-icon"
             onClick={() => setMenuIcon(true)}
@@ -281,3 +275,24 @@ const Nav = () => {
 };
 
 export default Nav;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
