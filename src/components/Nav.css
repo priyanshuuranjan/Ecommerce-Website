@@ -1,3 +1,98 @@
+/* 
+
+.cart-sidebar {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff; 
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cart-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .cart-close-button:hover {
+    color: #ff0000;
+  }
+  
+  .cart-sidebar p {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .emptycart_img {
+    width: 100%;
+    max-width: 300px; 
+    padding: 10px;
+  }
+  
+
+  .cart-trolley--link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333; 
+  }
+
+  
+  .cart-item-count {
+    font-size: 20px; 
+    font-weight: bold; 
+  }
+  
+  .cart-trolley {
+    font-size: 30px; 
+    margin-right: 10px;
+  }
+  
+  .cart-total--item {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: #ff0000; 
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    font-size: 14px; 
+  }
+  
+
+
+
+
+
+
+
+ */
+
+
+
+ /* =================================================================
+
+the old nav pages 
+
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
@@ -11,7 +106,6 @@ import MenuItem from "@mui/material/MenuItem";
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const [price, setPrice] = useState(0);
   // console.log(price);
@@ -23,12 +117,21 @@ const Nav = () => {
 
   // working on card menu when we add any item then it show that particular items
 
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const Nav = styled.nav`
     .navbar-lists {
       display: flex;
       gap: 4.8rem;
       align-items: center;
-      z-index: 9999;
+         z-index: 9999;
 
       .navbar-link {
         &:link,
@@ -47,85 +150,6 @@ const Nav = () => {
           color: ${({ theme }) => theme.colors.helper};
         }
       }
-    }
-
-    // side navbar code
-    .cart-sidebar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 100%;
-      background: #fff; /* Background color for the cart sidebar */
-      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better appearance */
-      z-index: 1000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .cart-close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-      color: #333; /* Color for the close button */
-    }
-
-    .cart-close-button:hover {
-      color: #ff0000; /* Change color on hover if desired */
-    }
-
-    .cart-sidebar p {
-      font-size: 22px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .emptycart_img {
-      width: 100%;
-      max-width: 300px; /* Adjust the maximum width as needed */
-      padding: 10px;
-    }
-
-    /* Styling for the cart icon and item count */
-    .cart-trolley--link {
-      position: relative;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      text-decoration: none;
-      color: #333; /* Color for the cart icon */
-    }
-
-    /* getdata.length size */
-    .cart-item-count {
-      font-size: 20px; /* Adjust the font size as needed */
-      font-weight: bold; /* To make it bold as per your previous request */
-    }
-
-    .cart-trolley {
-      font-size: 30px; /* Adjust the size as needed */
-      margin-right: 10px;
-    }
-
-    .cart-total--item {
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      background-color: #ff0000; /* Background color for the item count circle */
-      color: #fff; /* Text color for the item count */
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      top: 0;
-      right: 0;
-      font-size: 14px; /* Adjust the font size as needed */
     }
 
     .mobile-navbar-btn {
@@ -187,6 +211,7 @@ const Nav = () => {
           color: ${({ theme }) => theme.colors.black};
         }
       }
+      
 
       .active .mobile-nav-icon {
         display: none;
@@ -218,7 +243,7 @@ const Nav = () => {
         visibility: hidden;
         opacity: 0;
         transform: translateX(100%);
-        /* transform-origin: top; */
+        
         transition: all 3s linear;
       }
 
@@ -265,7 +290,7 @@ const Nav = () => {
             <NavLink
               to="/"
               className="navbar-link "
-              onClick={() => setMenuIcon(false)}
+              onClick={() => setMenuIcon(false )}
             >
               Home
             </NavLink>
@@ -298,37 +323,39 @@ const Nav = () => {
             </NavLink>
           </li>
           <li>
-            <div
-              className="navbar-link cart-trolley--link"
-              onClick={() => setIsCartOpen(!isCartOpen)}
-              style={{ cursor: "pointer" }}
-            >
+            <NavLink to="" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
-              <span className="cart-item-count">{getdata.length}</span>
-            </div>
-            {isCartOpen && (
-              <div className="cart-sidebar">
-                <button
-                  onClick={() => setIsCartOpen(false)}
-                  className="cart-close-button"
-                >
-                  &#10006; {/* This is the cross (X) symbol */}
-                </button>
-                <p style={{ fontSize: 22 }}>Your cart is empty</p>
-                <img
-                  src="./images/giphy.gif"
-                  alt="cart gif"
-                  className="emptycart_img"
-                  style={{ width: "30rem" }}
-                />
-              </div>
-            )}
+              <span
+                className="cart-total--item"
+                id="basic-button"
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+              >
+                {getdata.length}
+              </span>
+              <Menu
+              style={{marginTop:60,marginLeft:1700,position:"absolute",width:"40vh",fontSize:23,cursor:"pointer"}}
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                  
+                // MenuListProps={{
+                //   "aria-labelledby": "basic-button",
+                // }}
+              >
+                 <p style={{fontSize:22}}>Your carts is empty</p>
+                    <img src="./images/giphy.gif" alt="" className='emptycart_img' style={{width:"15rem",padding:10}} />
+              </Menu>
+            </NavLink>
           </li>
         </ul>
 
-        {/* Two buttons for open and close of menu */}
+       
         <div className="mobile-navbar-btn">
-          <CgMenu
+        <CgMenu
             name="menu-outline"
             className="mobile-nav-icon"
             onClick={() => setMenuIcon(true)}
@@ -345,3 +372,9 @@ const Nav = () => {
 };
 
 export default Nav;
+
+
+
+
+
+ */
