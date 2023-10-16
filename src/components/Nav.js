@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import "./style.css";
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState(false);
@@ -20,6 +21,22 @@ const Nav = () => {
   console.log(getdata);
 
   const dispatch = useDispatch();
+
+  const dlt = (id) => {
+    dispatch(DLT(id));
+  };
+
+  const total = () => {
+    let price = 0;
+    getdata.map((ele, k) => {
+      price = ele.price * ele.qnty + price;
+    });
+    setPrice(price);
+  };
+
+  useEffect(() => {
+    total();
+  }, [total]);
 
   // working on card menu when we add any item then it show that particular items
 
@@ -259,12 +276,12 @@ const Nav = () => {
 
   return (
     <Nav>
-      <div className={menuIcon ? " active" : "navbar"}>
+      <div className={menuIcon ? "active" : "navbar"}>
         <ul className="navbar-lists">
           <li>
             <NavLink
               to="/"
-              className="navbar-link "
+              className="navbar-link"
               onClick={() => setMenuIcon(false)}
             >
               Home
@@ -273,7 +290,7 @@ const Nav = () => {
           <li>
             <NavLink
               to="/about"
-              className="navbar-link "
+              className="navbar-link"
               onClick={() => setMenuIcon(false)}
             >
               About
@@ -282,7 +299,7 @@ const Nav = () => {
           <li>
             <NavLink
               to="/products"
-              className="navbar-link "
+              className="navbar-link"
               onClick={() => setMenuIcon(false)}
             >
               Products
@@ -291,7 +308,7 @@ const Nav = () => {
           <li>
             <NavLink
               to="/contact"
-              className="navbar-link "
+              className="navbar-link"
               onClick={() => setMenuIcon(false)}
             >
               Contact
@@ -312,21 +329,80 @@ const Nav = () => {
                   onClick={() => setIsCartOpen(false)}
                   className="cart-close-button"
                 >
-                  &#10006; {/* This is the cross (X) symbol */}
+                  &#10006;
                 </button>
-                <p style={{ fontSize: 22 }}>Your cart is empty</p>
-                <img
-                  src="./images/giphy.gif"
-                  alt="cart gif"
-                  className="emptycart_img"
-                  style={{ width: "30rem" }}
-                />
+                {getdata.length > 0 ? (
+                  <div
+                    className="card-details"
+                    style={{ width: "24rem", padding: 10 }}
+                  >
+                    <Table>
+                      <thead>
+                        <tr>
+                          <th>Photo</th>
+                          <th>Restaurant Name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {getdata.map((item) => (
+                          <tr key={item.id}>
+                            <td>
+                              <NavLink to={`/cart/${item.id}`}>
+                                <img
+                                  src={item.imgdata}
+                                  style={{ width: "5rem", height: "5rem" }}
+                                  alt=""
+                                />
+                              </NavLink>
+                            </td>
+                            <td>
+                              <p>{item.rname}</p>
+                              <p>Price: ₹{item.price}</p>
+                              <p>Quantity: {item.qnty}</p>
+                              <p
+                                style={{
+                                  color: "red",
+                                  fontSize: 20,
+                                  cursor: "pointer",
+                                }}
+                                onClick={() => dlt(item.id)}
+                              >
+                                <i className="fas fa-trash smalltrash"></i>
+                              </p>
+                            </td>
+                            <td
+                              className="mt-5"
+                              style={{
+                                color: "red",
+                                fontSize: 20,
+                                cursor: "pointer",
+                              }}
+                              onClick={() => dlt(item.id)}
+                            >
+                              <i className="fas fa-trash largetrash"></i>
+                            </td>
+                          </tr>
+                        ))}
+                        <p className="text-center">Total: ₹ {price}</p>
+                      </tbody>
+                    </Table>
+                  </div>
+                ) : (
+                  <div>
+                    <p style={{ fontSize: 22 }}>Your cart is empty</p>
+                    <img
+                      src="/images/cart.gif"
+                      alt="cart gif"
+                      className="emptycart_img"
+                      style={{ width: "30rem" }}
+                    />
+                  </div>
+                )}
               </div>
             )}
           </li>
         </ul>
 
-        {/* Two buttons for open and close of menu */}
         <div className="mobile-navbar-btn">
           <CgMenu
             name="menu-outline"

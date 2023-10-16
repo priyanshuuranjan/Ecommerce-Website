@@ -6,24 +6,24 @@
 
 export const ADD = (item) => {
   return {
-    type: "ADD_CART",
-    payload: item,
-  };
-};
+      type: "ADD_CART",
+      payload: item
+  }
+}
 
-// remove items
+// remove iteams
 export const DLT = (id) => {
   return {
-    type: "RMV_CART",
-    payload: id,
-  };
-};
+      type: "RMV_CART",
+      payload: id
+  }
+}
 
-// remove individual item
+// remove individual iteam
 
 export const REMOVE = (iteam) => {
   return {
-    type: "RMV_ONE",
-    payload: iteam,
-  };
-};
+      type: "RMV_ONE",
+      payload: iteam
+  }
+}
