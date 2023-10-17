@@ -79,7 +79,7 @@ const Nav = () => {
       z-index: 1000;
       display: flex;
       flex-direction: column;
-      align-items: flex-start; /* Change to align items to the left */
+      align-items: flex-start; 
       padding: 20px;
     }
 
