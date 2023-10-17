@@ -99,8 +99,9 @@ const Nav = () => {
     }
 
     .cart-sidebar p {
-      font-size: 17px; // cart size variable
-      margin-bottom: 10px;
+      font-size: 18px; // cart size variable
+      margin-bottom: 7px;
+      color: #212529;
       text-align: center;
     }
 
@@ -336,13 +337,17 @@ const Nav = () => {
                 {getdata.length > 0 ? (
                   <div
                     className="card-details"
-                    style={{ width: "24rem", padding: 10 }}
+                    style={{ width: "32rem", padding: 10 }}
                   >
                     <Table>
                       <thead>
                         <tr style={{ fontSize: 17 }}>
                           <th>Photo</th>
-                          <th>Product</th>
+                          <th
+                            style={{ textAlign: "left", paddingLeft: "50px" }}
+                          >
+                            Items
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -385,7 +390,12 @@ const Nav = () => {
                             </td>
                           </tr>
                         ))}
-                        <p className="text-center">Total: ₹ {price}</p>
+                        <p
+                          className="text-center"
+                          style={{ fontWeight: "bold" }}
+                        >
+                          Total: ₹ {price}
+                        </p>
                       </tbody>
                     </Table>
                   </div>
