@@ -340,7 +340,7 @@ const Nav = () => {
                       <thead>
                         <tr>
                           <th>Photo</th>
-                          <th>Restaurant Name</th>
+                          <th>Product</th>
                         </tr>
                       </thead>
                       <tbody>
