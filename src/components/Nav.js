@@ -73,7 +73,7 @@ const Nav = () => {
       position: fixed;
       top: 0;
       right: 0;
-      width: 300px;
+      width: 350px;
       height: 100%;
       background: #fff; /* Background color for the cart sidebar */
       box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better appearance */
@@ -89,7 +89,7 @@ const Nav = () => {
       top: 10px;
       right: 10px;
       background: none;
-      border: none;
+      border: 2px solid red;
       font-size: 24px;
       cursor: pointer;
       color: #333; /* Color for the close button */
@@ -100,7 +100,7 @@ const Nav = () => {
     }
 
     .cart-sidebar p {
-      font-size: 22px;
+      font-size: 17px;  // cart size variable 
       margin-bottom: 10px;
       text-align: center;
     }
