@@ -66,7 +66,11 @@ const Nav = () => {
       }
     }
 
-    // side bar cart  code........
+    //! side bar cart  code........
+
+    .cart-table-header {
+      margin-right: 20px; /* Adjust the margin value as needed */
+    }
 
     .cart-sidebar {
       position: fixed;
@@ -74,16 +78,14 @@ const Nav = () => {
       right: 0;
       width: 350px;
       height: 100%;
-      background: #fff; /* Background color for the cart sidebar */
-      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a better appearance */
+      background: #fff;
+      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
       z-index: 1000;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start; /* Change to align items to the left */
       padding: 20px;
-      
     }
-    
 
     .cart-close-button {
       position: absolute;
@@ -334,6 +336,7 @@ const Nav = () => {
                 >
                   &#10006;
                 </button>
+
                 {getdata.length > 0 ? (
                   <div
                     className="card-details"
@@ -341,9 +344,9 @@ const Nav = () => {
                   >
                     <Table>
                       <thead>
-                        <tr>
-                          <th>Photo</th>
-                          <th>Product</th>
+                        <tr style={{ fontSize: 17 }}>
+                          <th className="cart-table-header">Photo</th>
+                          <th className="cart-table-header">Product</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -359,7 +362,7 @@ const Nav = () => {
                               </NavLink>
                             </td>
                             <td>
-                              <p>{item.rname}</p>
+                              <p>{item.name}</p>
                               <p>Price: ₹{item.price}</p>
                               <p>Quantity: {item.qnty}</p>
                               <p
