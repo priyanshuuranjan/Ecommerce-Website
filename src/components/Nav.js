@@ -17,8 +17,6 @@ const Nav = () => {
   const [price, setPrice] = useState(0);
   // console.log(price);
 
-
-
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
 
@@ -68,7 +66,8 @@ const Nav = () => {
       }
     }
 
-    // side navbar code
+    // side bar cart  code........
+
     .cart-sidebar {
       position: fixed;
       top: 0;
@@ -82,7 +81,9 @@ const Nav = () => {
       flex-direction: column;
       align-items: center;
       padding: 20px;
+      
     }
+    
 
     .cart-close-button {
       position: absolute;
@@ -100,7 +101,7 @@ const Nav = () => {
     }
 
     .cart-sidebar p {
-      font-size: 17px;  // cart size variable 
+      font-size: 17px; // cart size variable
       margin-bottom: 10px;
       text-align: center;
     }
@@ -349,10 +350,10 @@ const Nav = () => {
                         {getdata.map((item) => (
                           <tr key={item.id}>
                             <td>
-                              <NavLink to={`/cart/${item.id}`}> 
+                              <NavLink to={`/cart/${item.id}`}>
                                 <img
                                   src={item.imgdata}
-                                  style={{ width: "5rem", height: "5rem" }}
+                                  style={{ width: "7rem", height: "7rem" }}
                                   alt=""
                                 />
                               </NavLink>
@@ -390,13 +391,32 @@ const Nav = () => {
                     </Table>
                   </div>
                 ) : (
-                  <div className='card_details d-flex justify-content-center align-items-center' style={{width:"24rem",padding:10,position:"relative"}}>
-                    <i className='fas fa-close smallclose'
-                   
-                     style={{position:"absolute",top:2,right:20,fontSize:23,cursor:"pointer"}}></i>
-                    <p style={{fontSize:22}}>Your carts is empty</p>
-                    <img src="./cart.gif" alt="" className='emptycart_img' style={{width:"5rem",padding:10}} />
-                   </div>
+                  <div
+                    className="card_details d-flex justify-content-center align-items-center"
+                    style={{
+                      width: "24rem",
+                      padding: 10,
+                      position: "relative",
+                    }}
+                  >
+                    <i
+                      className="fas fa-close smallclose"
+                      style={{
+                        position: "absolute",
+                        top: 2,
+                        right: 20,
+                        fontSize: 23,
+                        cursor: "pointer",
+                      }}
+                    ></i>
+                    <p style={{ fontSize: 22 }}>Your carts is empty</p>
+                    <img
+                      src="./cart.gif"
+                      alt=""
+                      className="emptycart_img"
+                      style={{ width: "5rem", padding: 10 }}
+                    />
+                  </div>
                 )}
               </div>
             )}
