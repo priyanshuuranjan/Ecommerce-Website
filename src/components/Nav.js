@@ -79,10 +79,13 @@ const Nav = () => {
       z-index: 1000;
       display: flex;
       flex-direction: column;
-      align-items: flex-start; 
+      align-items: flex-start;
       padding: 20px;
     }
-
+    .cart-table-header {
+      border-bottom: 2px solid #000; /* Add a 2px thick solid black line under the headers */
+      font-weight: bold; /* Make the text bold */
+    }
     .cart-close-button {
       position: absolute;
       top: 10px;
@@ -342,8 +345,9 @@ const Nav = () => {
                     <Table>
                       <thead>
                         <tr style={{ fontSize: 17 }}>
-                          <th>Photo</th>
+                          <th className="cart-table-header">Photo</th>
                           <th
+                            className="cart-table-header"
                             style={{ textAlign: "left", paddingLeft: "50px" }}
                           >
                             Items
