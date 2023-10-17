@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import "./style.css";
+// import "./style.css";
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState(false);
@@ -16,6 +16,8 @@ const Nav = () => {
 
   const [price, setPrice] = useState(0);
   // console.log(price);
+
+
 
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
@@ -347,7 +349,7 @@ const Nav = () => {
                         {getdata.map((item) => (
                           <tr key={item.id}>
                             <td>
-                              <NavLink to={`/cart/${item.id}`}>
+                              <NavLink to={`/cart/${item.id}`}> 
                                 <img
                                   src={item.imgdata}
                                   style={{ width: "5rem", height: "5rem" }}
@@ -388,15 +390,13 @@ const Nav = () => {
                     </Table>
                   </div>
                 ) : (
-                  <div>
-                    <p style={{ fontSize: 22 }}>Your cart is empty</p>
-                    <img
-                      src="/images/cart.gif"
-                      alt="cart gif"
-                      className="emptycart_img"
-                      style={{ width: "30rem" }}
-                    />
-                  </div>
+                  <div className='card_details d-flex justify-content-center align-items-center' style={{width:"24rem",padding:10,position:"relative"}}>
+                    <i className='fas fa-close smallclose'
+                   
+                     style={{position:"absolute",top:2,right:20,fontSize:23,cursor:"pointer"}}></i>
+                    <p style={{fontSize:22}}>Your carts is empty</p>
+                    <img src="./cart.gif" alt="" className='emptycart_img' style={{width:"5rem",padding:10}} />
+                   </div>
                 )}
               </div>
             )}
