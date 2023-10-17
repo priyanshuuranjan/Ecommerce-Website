@@ -68,10 +68,6 @@ const Nav = () => {
 
     //! side bar cart  code........
 
-    .cart-table-header {
-      margin-right: 20px; /* Adjust the margin value as needed */
-    }
-
     .cart-sidebar {
       position: fixed;
       top: 0;
@@ -345,8 +341,8 @@ const Nav = () => {
                     <Table>
                       <thead>
                         <tr style={{ fontSize: 17 }}>
-                          <th className="cart-table-header">Photo</th>
-                          <th className="cart-table-header">Product</th>
+                          <th>Photo</th>
+                          <th>Product</th>
                         </tr>
                       </thead>
                       <tbody>
