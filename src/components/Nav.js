@@ -393,7 +393,7 @@ const Nav = () => {
                               <p  style={{
                                     fontSize: 24,
                                     cursor: "pointer",
-                                    
+                                    marginLeft:30,
                                     width: 100,
                               cursor: "pointer",
                               background: "#ddd",
@@ -401,13 +401,10 @@ const Nav = () => {
                                   }}>
                                 <span
                                   style={{
-                                    fontSize: 24,
-                                    cursor: "pointer",
-                                    paddingRight: "10px",
-                                    width: 100,
-                              cursor: "pointer",
-                              background: "#ddd",
-                              color: "#111",
+                                    
+                                    
+                                    paddingRight: "10px"
+                                    
                                   }}
                                   onClick={
                                     item.qnty <= 1
