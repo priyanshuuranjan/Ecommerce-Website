@@ -44,7 +44,7 @@ const ProductDetail = () => {
     compare();
   }, [id]);
 
-  //! this is used to get the card details or products details of cards...
+  //! this is used to get the card details or products details of Cards...
 
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
