@@ -56,7 +56,7 @@ const App = () => {
         <Route exact path="/*" element={<Error />} />
         <Route exact path="/footer" element={<Footer />} />
         <Route exact path="/fertilizer" element={<Fertilizer />} />
-        <Route exact path="/productDetails" element={<ProductDetail />} />
+        <Route exact  path='/cart/:id'  element={<ProductDetail />} />
       </Routes>
       <Footer />
     </ThemeProvider>
