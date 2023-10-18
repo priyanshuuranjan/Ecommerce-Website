@@ -411,7 +411,7 @@ const Nav = () => {
                                       : () => remove(item)
                                   }
                                 >
-                                  +
+                                  -
                                 </span>
                                 {item.qnty}
                                 <span
@@ -422,7 +422,7 @@ const Nav = () => {
                                   }}
                                   onClick={() => send(item)}
                                 >
-                                  -
+                                  +
                                 </span>
                               </p>
                               <p
