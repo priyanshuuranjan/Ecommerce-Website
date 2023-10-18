@@ -3,13 +3,20 @@ import Table from "react-bootstrap/Table";
 import "./style.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { useNavigate, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux'
+import { DLT,ADD,REMOVE } from '../redux/actions/action'
+
 
 const ProductDetail = () => {
-  
+
   const [data, setData] = useState([]);
 
   const { id } = useParams();
   // console.log(id);
+
+  //! this is used to get the card details or products details of cards.
+  const getdata = useSelector((state) => state.cartreducer.carts);
+  console.log(getdata);
 
   return (
     <>

@@ -17,7 +17,7 @@ const Nav = () => {
   const [price, setPrice] = useState(0);
   // console.log(price);
 
-  //! this is used to get the  items on the cart ye hm khi v use kr or items k value grt kr skte use kr k 
+  //! this is used to get the  items on the cart ye hm khi v use kr or cards ki item ko khi v get kr skte hai 
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
 
