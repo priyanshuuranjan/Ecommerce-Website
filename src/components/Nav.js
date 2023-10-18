@@ -391,9 +391,9 @@ const Nav = () => {
                               {/*  //!  quantity inc dec  */}
 
                               <p  style={{
+                                    fontSize: 24,
+                                    cursor: "pointer",
                                     
-                                    
-                                    paddingRight: "10px",
                                     width: 100,
                               cursor: "pointer",
                               background: "#ddd",
