@@ -14,7 +14,8 @@ const ProductDetail = () => {
   const { id } = useParams();
   // console.log(id);
 
-  //! this is used to get the card details or products details of cards.
+  //! this is used to get the card details or products details of cards...
+  
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
 
