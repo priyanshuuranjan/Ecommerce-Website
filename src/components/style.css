@@ -13,7 +13,7 @@
 }
 
 .iteamsdetails {
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@
 }
 .items_img img {
   width: 25rem;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .details {
