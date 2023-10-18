@@ -390,21 +390,20 @@ const Nav = () => {
 
                               {/*  //!  quantity inc dec  */}
 
-                              <p  style={{
-                                    fontSize: 24,
-                                    cursor: "pointer",
-                                    marginLeft:30,
-                                    width: 100,
-                              cursor: "pointer",
-                              background: "#ddd",
-                              color: "#111",
-                                  }}>
+                              <p
+                                style={{
+                                  fontSize: 24,
+                                  cursor: "pointer",
+                                  marginLeft: 30,
+                                  width: 100,
+                                  cursor: "pointer",
+                                  background: "#ddd",
+                                  color: "#111",
+                                }}
+                              >
                                 <span
                                   style={{
-                                    
-                                    
-                                    paddingRight: "10px"
-                                    
+                                    paddingRight: "10px",
                                   }}
                                   onClick={
                                     item.qnty <= 1
