@@ -15,6 +15,7 @@ const Fertilizer = () => {
 
   const dispatch = useDispatch();
 
+  //add items 
   const send = (e) => {
     // console.log(e);
     dispatch(ADD(e));
