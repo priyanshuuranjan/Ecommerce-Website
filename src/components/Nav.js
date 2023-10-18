@@ -361,7 +361,11 @@ const Nav = () => {
                               <NavLink to={`/cart/${item.id}`}>
                                 <img
                                   src={item.imgdata}
-                                  style={{ width: "9rem", height: "9rem", marginTop:5 }}
+                                  style={{
+                                    width: "9rem",
+                                    height: "9rem",
+                                    marginTop: 5,
+                                  }}
                                   alt=""
                                 />
                               </NavLink>
