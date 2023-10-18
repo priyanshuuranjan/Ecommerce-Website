@@ -9,6 +9,7 @@ import Table from "react-bootstrap/esm/Table";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 // import "./style.css";
+import { REMOVE, ADD } from "../redux/actions/action";
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState(false);
@@ -17,7 +18,7 @@ const Nav = () => {
   const [price, setPrice] = useState(0);
   // console.log(price);
 
-  //! this is used to get the  items on the cart ye hm khi v use kr or cards ki item ko khi v get kr skte hai 
+  //! this is used to get the  items on the cart ye hm khi v use kr or cards ki item ko khi v get kr skte hai
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
 
@@ -25,6 +26,18 @@ const Nav = () => {
 
   const dlt = (id) => {
     dispatch(DLT(id));
+  };
+
+  // add data
+
+  const send = (e) => {
+    // console.log(e);
+    dispatch(ADD(e));
+  };
+
+  // remove one
+  const remove = (item) => {
+    dispatch(REMOVE(item));
   };
 
   const total = () => {
@@ -374,7 +387,48 @@ const Nav = () => {
                             <td>
                               <p>{item.name}</p>
                               <p>Price: ₹{item.price}</p>
-                              <p>Quantity: {item.qnty}</p>
+
+                              {/*  //!  quantity inc dec  */}
+
+                              <p  style={{
+                                    
+                                    
+                                    paddingRight: "10px",
+                                    width: 100,
+                              cursor: "pointer",
+                              background: "#ddd",
+                              color: "#111",
+                                  }}>
+                                <span
+                                  style={{
+                                    fontSize: 24,
+                                    cursor: "pointer",
+                                    paddingRight: "10px",
+                                    width: 100,
+                              cursor: "pointer",
+                              background: "#ddd",
+                              color: "#111",
+                                  }}
+                                  onClick={
+                                    item.qnty <= 1
+                                      ? () => dlt(item.id)
+                                      : () => remove(item)
+                                  }
+                                >
+                                  +
+                                </span>
+                                {item.qnty}
+                                <span
+                                  style={{
+                                    fontSize: 24,
+                                    cursor: "pointer",
+                                    paddingLeft: "10px", // Add padding to separate the buttons
+                                  }}
+                                  onClick={() => send(item)}
+                                >
+                                  -
+                                </span>
+                              </p>
                               <p
                                 style={{
                                   color: "red",
