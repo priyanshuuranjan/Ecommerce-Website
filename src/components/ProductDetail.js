@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import "./style.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from "react-router-dom";
 
 const ProductDetail = () => {
-
-
+  
   const [data, setData] = useState([]);
 
-  const {id} = useParams();
+  const { id } = useParams();
   // console.log(id);
 
   return (
