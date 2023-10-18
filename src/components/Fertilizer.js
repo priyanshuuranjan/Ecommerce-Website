@@ -23,7 +23,7 @@ const Fertilizer = () => {
   return (
     <Wrapper className="section">
       <div className="container mt-3">
-        <h2 className="text-center">Add to Cart Projects</h2>
+        <h2 className="text-center">Chemical Fertilizer's</h2>
 
         <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
           {data.map((element, id) => {
