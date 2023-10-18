@@ -26,6 +26,8 @@
 .items_img img {
   width: 25rem;
   border-radius: 7px;
+  height: 20rem;
+  margin-left: 10px;
 }
 
 .details {
