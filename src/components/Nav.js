@@ -8,9 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
 // import Menu from "@mui/material/Menu";
 // import MenuItem from "@mui/material/MenuItem";
-import { MdArrowBack } from 'react-icons/md';
-
-
+import { MdArrowBack } from "react-icons/md";
 
 // import "./style.css";
 import { REMOVE, ADD } from "../redux/actions/action";
@@ -366,7 +364,6 @@ const Nav = () => {
             </div>
 
             {isCartOpen && (
-              
               <div className="cart-sidebar">
                 <button
                   onClick={() => setIsCartOpen(false)}
@@ -388,7 +385,13 @@ const Nav = () => {
                     <Table>
                       <thead>
                         <tr style={{ fontSize: 17 }}>
-                        <th className="cart-table-header"><MdArrowBack /> Photo</th>
+                          <th className="cart-table-header">
+                            <MdArrowBack
+                              style={{ cursor: "pointer", fontSize: "24px" }} // Customize the icon size and cursor style
+                              onClick={() => setIsCartOpen(false)} // Add the function to close the menu bar
+                            />
+                            Photo
+                          </th>
                           <th
                             className="cart-table-header"
                             style={{ textAlign: "left", paddingLeft: "50px" }}
