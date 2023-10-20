@@ -360,7 +360,9 @@ const Nav = () => {
               <FiShoppingCart className="cart-trolley" />
               <span className="cart-item-count">{getdata.length}</span>
             </div>
+
             {isCartOpen && (
+              
               <div className="cart-sidebar">
                 <button
                   onClick={() => setIsCartOpen(false)}
