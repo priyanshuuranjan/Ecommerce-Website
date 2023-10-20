@@ -279,6 +279,62 @@ const Cardsdata = [
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
     qnty: 0,
   },
+  {
+    id: "21",
+    name: "ONION",
+    imgdata: "/images/seed/s23.jpg",
+    address: "F1 Hybrid",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 350,
+    rating: "4.2",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "22",
+    name: "RADISH",
+    imgdata: "/images/seed/s26.jpg",
+    address: "F1 Hybrid",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 80,
+    rating: "4.7",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "24",
+    name: "SPINACH",
+    imgdata: "/images/seed/s25.jpg",
+    address: "Red Hybrid",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 120,
+    rating: "4.9",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "25",
+    name: "SQUASH",
+    imgdata: "/images/seed/s27.jpg",
+    address: "Iris Hybrid",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 720,
+    rating: "4.6",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
+    qnty: 0,
+  },
 ];
 
 export default Cardsdata;
