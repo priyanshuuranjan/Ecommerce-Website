@@ -353,32 +353,32 @@ const Nav = () => {
           </li>
           <li>
             <div
-             className="navbar-link cart-trolley--link"
-             onClick={() => setIsCartOpen(!isCartOpen)}
-             style={{ cursor: "pointer" }}
-           >
-             <FiShoppingCart className="cart-trolley" />
-             <span className="cart-item-count">{getdata.length}</span>
-           </div>
-           {isCartOpen && (
-             <div className="cart-sidebar">
-               <button
-                 onClick={() => setIsCartOpen(false)}
-                 className="cart-close-button"
-               >
-                 &#10006;
-               </button>
+              className="navbar-link cart-trolley--link"
+              onClick={() => setIsCartOpen(!isCartOpen)}
+              style={{ cursor: "pointer" }}
+            >
+              <FiShoppingCart className="cart-trolley" />
+              <span className="cart-item-count">{getdata.length}</span>
+            </div>
+            {isCartOpen && (
+              <div className="cart-sidebar">
+                <button
+                  onClick={() => setIsCartOpen(false)}
+                  className="cart-close-button"
+                >
+                  &#10006;
+                </button>
 
                 {getdata.length > 0 ? (
                   <div
-                  className="card-details"
-                  style={{
-                    width: "32rem",
-                    padding: 10,
-                    maxHeight: "100vh", //here i  Set the maximum height equal to the screen height
-                    overflowY: "auto", // this is used to show the scroll bar
-                  }}
-                >
+                    className="card-details"
+                    style={{
+                      width: "32rem",
+                      padding: 10,
+                      maxHeight: "100vh", //here i  Set the maximum height equal to the screen height
+                      overflowY: "auto", // this is used to show the scroll bar
+                    }}
+                  >
                     <Table>
                       <thead>
                         <tr style={{ fontSize: 17 }}>
