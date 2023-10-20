@@ -122,7 +122,8 @@ const Nav = () => {
       text-align: center;
     }
 
-    /* styles.css */
+    // side bar cart css images
+
     .container {
       display: flex;
       flex-direction: column;
@@ -130,16 +131,19 @@ const Nav = () => {
       justify-content: center;
       height: 100vh;
       text-align: center;
+      margin-left: 40px;
     }
 
     .heading {
       font-size: 22px;
-      margin-top: 10px;
+      margin: 0;
+      margin-top: -100px;
     }
 
     .emptycart_img {
-      width: 30rem;
-      padding: 10px;
+      display: flex;
+      width: 200px;
+      align-items: center;
     }
 
     /* Styling for the cart icon and item count */
@@ -485,7 +489,7 @@ const Nav = () => {
                       <p className="heading">Your cart is empty</p>
                       <img
                         src="./images/cart.gif"
-                        alt=""
+                        alt="gif"
                         className="emptycart_img"
                       />
                     </div>
