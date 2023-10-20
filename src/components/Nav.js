@@ -424,17 +424,16 @@ const Nav = () => {
 
                               <p
                                 style={{
-                                  fontSize: 24,
+                                  fontSize: 22,
                                   cursor: "pointer",
                                   marginLeft: 30,
                                   width: 100,
                                   cursor: "pointer",
-                                  background: "#ddd",
-                                  color: "#111",
                                 }}
                               >
                                 <span
                                   style={{
+                                    fontSize: "16px",
                                     paddingRight: "10px",
                                   }}
                                   onClick={
@@ -443,28 +442,44 @@ const Nav = () => {
                                       : () => remove(item)
                                   }
                                 >
-                                  -
+                                  <span
+                                    style={{
+                                      backgroundColor: "red",
+                                      color: "white",
+                                      cursor: "pointer",
+                                      display: "inline-block",
+                                      padding: "5px 10px",
+                                      borderRadius: "5px",
+                                      transition: "background-color 0.3s",
+                                    }}
+                                  >
+                                    -
+                                  </span>
                                 </span>
                                 {item.qnty}
                                 <span
                                   style={{
-                                    fontSize: 24,
+                                    fontSize: "16px", // Set the font size to 16px
                                     cursor: "pointer",
-                                    paddingLeft: "10px", // Add padding to separate the buttons
+                                    paddingLeft: "10px",
                                   }}
                                   onClick={() => send(item)}
                                 >
-                                  +
+                                  <span
+                                    style={{
+                                      backgroundColor: "green",
+                                      color: "white",
+                                      cursor: "pointer",
+                                      display: "inline-block",
+                                      padding: "5px 10px",
+                                      borderRadius: "5px",
+                                      transition: "background-color 0.3s",
+                                    }}
+                                  >
+                                    +
+                                  </span>
                                 </span>
-                              </p>
-                              <p
-                                style={{
-                                  color: "red",
-                                  fontSize: 20,
-                                  cursor: "pointer",
-                                }}
-                                onClick={() => dlt(item.id)}
-                              >
+
                                 <i className="fas fa-trash smalltrash"></i>
                               </p>
                             </td>
