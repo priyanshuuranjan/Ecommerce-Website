@@ -2,36 +2,35 @@ const Cardsdata = [
   {
     id: "dap",
     name: "DAP",
-    imgdata: "/images/dap1.jpg",
-    address: "North Indian, Biryani, Mughlai",
+    imgdata: "/images/dap1.PNG",
+    address: "20:20:13",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 1175 + order placed from here recently",
-    price: 350,
+    price: 1250,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
-    id: "dap",
-    name: "pesi Adda",
+    id: "groomer_dap",
+    name: "DAP",
      imgdata: "/images/dap2.png",
-    address: "Street Food",
+    address: "18:46:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 2525 + order placed from here recently",
-    price: 25,
-    rating: "3.9",
+    price: 1425,
+    rating: "4.9",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
-    id: "equipment",
-    name: "La Milano Pizzeria",
-    imgdata:
-      "https://b.zmtcdn.com/data/pictures/chains/1/19708611/10f90d4a69678d98662514d173b29665_o2_featured_v2.jpg",
+    id: "mop",
+    name: "Potash",
+    imgdata:"/images/mop.PNG",
     address: "Pizza, Fast Food, Pasta",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -43,11 +42,10 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "pesticide",
-    name: "Momoman",
-    imgdata:
-      "https://b.zmtcdn.com/data/pictures/chains/1/113401/59f29399060caefcc575d59dc9402ce8_o2_featured_v2.jpg",
-    address: "Momos",
+    id: "urea",
+    name: "Urea",
+    imgdata:"/images/urea.png",
+    address: "46% N2",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
