@@ -69,7 +69,7 @@ const ProductDetail = () => {
                         <td>
                           <p>
                             {" "}
-                            <strong>Restaurant</strong> : {ele.name}
+                            <strong>Name</strong> : {ele.name}
                           </p>
                           <p>
                             {" "}
@@ -77,7 +77,7 @@ const ProductDetail = () => {
                           </p>
                           <p>
                             {" "}
-                            <strong>Dishes</strong> : {ele.address}
+                            <strong>Content</strong> : {ele.address}
                           </p>
                           <p>
                             {" "}
