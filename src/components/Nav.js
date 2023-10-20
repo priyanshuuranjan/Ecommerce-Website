@@ -122,9 +122,23 @@ const Nav = () => {
       text-align: center;
     }
 
+    /* styles.css */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .heading {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
     .emptycart_img {
-      width: 100%;
-      max-width: 300px; /* Adjust the maximum width as needed */
+      width: 30rem;
       padding: 10px;
     }
 
@@ -467,23 +481,14 @@ const Nav = () => {
                       position: "relative",
                     }}
                   >
-                    <i
-                      className="fas fa-close smallclose"
-                      style={{
-                        position: "absolute",
-                        top: 2,
-                        right: 20,
-                        fontSize: 23,
-                        cursor: "pointer",
-                      }}
-                    ></i>
-                    <p style={{ fontSize: 22 }}>Your carts is empty</p>
-                    <img
-                      src="./cart.gif"
-                      alt=""
-                      className="emptycart_img"
-                      style={{ width: "5rem", padding: 10 }}
-                    />
+                    <div className="container">
+                      <p className="heading">Your cart is empty</p>
+                      <img
+                        src="./images/cart.gif"
+                        alt=""
+                        className="emptycart_img"
+                      />
+                    </div>
                   </div>
                 )}
               </div>
