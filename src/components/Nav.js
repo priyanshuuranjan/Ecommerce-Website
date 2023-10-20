@@ -122,7 +122,7 @@ const Nav = () => {
       text-align: center;
     }
 
-    // side bar cart css images
+    //! side bar cart css images
 
     .container {
       display: flex;
@@ -135,7 +135,7 @@ const Nav = () => {
     }
 
     .heading {
-      font-size: 22px;
+      font-size: 24px;
       margin: 0;
       margin-top: -100px;
     }
