@@ -16,7 +16,7 @@ const Cardsdata = [
   {
     id: "groomer_dap",
     name: "DAP",
-     imgdata: "/images/dap2.png",
+    imgdata: "/images/dap2.png",
     address: "18:46:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -30,7 +30,7 @@ const Cardsdata = [
   {
     id: "mop",
     name: "POTASH",
-    imgdata:"/images/mop.PNG",
+    imgdata: "/images/mop.PNG",
     address: "60% k2o",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -44,7 +44,7 @@ const Cardsdata = [
   {
     id: "groomer_urea",
     name: "UREA",
-    imgdata:"/images/urea2.png",
+    imgdata: "/images/urea2.png",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -58,7 +58,7 @@ const Cardsdata = [
   {
     id: "groomer_urea",
     name: "UREA",
-    imgdata:"/images/urea2.png",
+    imgdata: "/images/urea2.png",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -72,7 +72,7 @@ const Cardsdata = [
   {
     id: "groomer_urea",
     name: "UREA",
-    imgdata:"/images/urea2.png",
+    imgdata: "/images/urea2.png",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -86,7 +86,7 @@ const Cardsdata = [
   {
     id: "groomer_urea",
     name: "UREA",
-    imgdata:"/images/urea2.png",
+    imgdata: "/images/urea2.png",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -100,7 +100,7 @@ const Cardsdata = [
   {
     id: "groomer_urea",
     name: "UREA",
-    imgdata:"/images/urea2.png",
+    imgdata: "/images/urea2.png",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -110,7 +110,7 @@ const Cardsdata = [
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
-  }
+  },
 ];
 
 export default Cardsdata;
