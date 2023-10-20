@@ -6,7 +6,7 @@ import Product from "../components/Product";
 const featureProducts = [
   {
     id: "fertilizer",
-    name: "fertilizers",
+    name: "chemical",
     image: "/images/fertilizer.jpg",
   },
   {
