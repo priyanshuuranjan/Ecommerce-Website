@@ -308,7 +308,7 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "24",
+    id: "23",
     name: "SPINACH",
     imgdata: "/images/seed/s25.jpg",
     address: "Red Hybrid",
@@ -322,7 +322,7 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "25",
+    id: "24",
     name: "SQUASH",
     imgdata: "/images/seed/s27.jpg",
     address: "Iris Hybrid",
