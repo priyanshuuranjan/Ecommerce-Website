@@ -1,6 +1,6 @@
 const Cardsdata = [
   {
-    id: "fertilizers",
+    id: "dap",
     name: "DAP",
     imgdata: "/images/fertilizer.jpg",
     address: "North Indian, Biryani, Mughlai",
