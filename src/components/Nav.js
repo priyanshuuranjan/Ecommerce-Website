@@ -6,8 +6,11 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import { DLT } from "../redux/actions/action";
 import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+// import Menu from "@mui/material/Menu";
+// import MenuItem from "@mui/material/MenuItem";
+import { IoReturnDownBack } from 'react-icons/io5';
+
+
 // import "./style.css";
 import { REMOVE, ADD } from "../redux/actions/action";
 
@@ -384,7 +387,7 @@ const Nav = () => {
                     <Table>
                       <thead>
                         <tr style={{ fontSize: 17 }}>
-                          <th className="cart-table-header">Photo</th>
+                        <th className="cart-table-header"><IoChevronBack /> Back</th>
                           <th
                             className="cart-table-header"
                             style={{ textAlign: "left", paddingLeft: "50px" }}
