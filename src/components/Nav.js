@@ -8,7 +8,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
 // import Menu from "@mui/material/Menu";
 // import MenuItem from "@mui/material/MenuItem";
-import { IoReturnDownBack } from 'react-icons/io5';
+import { MdArrowBack } from 'react-icons/md';
+
 
 
 // import "./style.css";
@@ -387,7 +388,7 @@ const Nav = () => {
                     <Table>
                       <thead>
                         <tr style={{ fontSize: 17 }}>
-                        <th className="cart-table-header"><IoChevronBack /> Back</th>
+                        <th className="cart-table-header"><MdArrowBack /> Photo</th>
                           <th
                             className="cart-table-header"
                             style={{ textAlign: "left", paddingLeft: "50px" }}
