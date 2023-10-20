@@ -468,7 +468,18 @@ const Nav = () => {
                                     +
                                   </span>
                                 </span>
+                              </p>
 
+                              {/* //! to delete the item from the cart slider */}
+
+                              <p
+                                style={{
+                                  color: "red",
+                                  fontSize: 20,
+                                  cursor: "pointer",
+                                }}
+                                onClick={() => dlt(item.id)}
+                              >
                                 <i className="fas fa-trash smalltrash"></i>
                               </p>
                             </td>
@@ -481,8 +492,6 @@ const Nav = () => {
                               }}
                               onClick={() => dlt(item.id)}
                             >
-                              {/* //! to delete the item from the cart slider */}
-
                               <i className="fas fa-trash largetrash"></i>
                             </td>
                           </tr>
