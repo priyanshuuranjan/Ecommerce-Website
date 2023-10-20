@@ -6,7 +6,7 @@ const Cardsdata = [
     address: "VNR NT 77",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 1175 + order placed from here recently",
+    somedata: " 1175 + people ordered this in the last 7 days",
     price: 580,
     rating: "4.7",
     arrimg:
@@ -20,7 +20,7 @@ const Cardsdata = [
     address: "VNR 3171",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 2525 + order placed from here recently",
+    somedata: " 2525 + people ordered this in the last 7 days",
     price: 180,
     rating: "4.9",
     arrimg:
@@ -34,7 +34,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 650 + order placed from here recently",
+    somedata: " 650 + people ordered this in the last 7 days",
     price: 490,
     rating: "4.2",
     arrimg:
@@ -48,7 +48,7 @@ const Cardsdata = [
     address: "Clause",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 350,
     rating: "4.4",
     arrimg:
@@ -62,7 +62,7 @@ const Cardsdata = [
     address: " F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 2525 + order placed from here recently",
+    somedata: " 2525 + people ordered this in the last 7 days",
     price: 298,
     rating: "4.9",
     arrimg:
@@ -76,7 +76,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 650 + order placed from here recently",
+    somedata: " 650 + people ordered this in the last 7 days",
     price: 390,
     rating: "4.6",
     arrimg:
@@ -90,7 +90,7 @@ const Cardsdata = [
     address: "BSS 1031",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 1300 + order placed from here recently",
+    somedata: " 1300 + people ordered this in the last 7 days",
     price: 310,
     rating: "4.2",
     arrimg:
@@ -104,7 +104,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 222 + order placed from here recently",
+    somedata: " 222 + people ordered this in the last 7 days",
     price: 350,
     rating: "4.0",
     arrimg:
@@ -118,7 +118,7 @@ const Cardsdata = [
     address: "SW-811",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 350,
     rating: "4.9",
     arrimg:
@@ -132,7 +132,7 @@ const Cardsdata = [
     address: "065 F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 850,
     rating: "4.7",
     arrimg:
@@ -146,7 +146,7 @@ const Cardsdata = [
     address: "NT77 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 200,
     rating: "4.5",
     arrimg:
@@ -160,7 +160,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 1175 + order placed from here recently",
+    somedata: " 1175 + people ordered this in the last 7 days",
     price: 110,
     rating: "4.7",
     arrimg:
@@ -174,7 +174,7 @@ const Cardsdata = [
     address: "VS-862",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 2525 + order placed from here recently",
+    somedata: " 2525 + people ordered this in the last 7 days",
     price: 285,
     rating: "4.9",
     arrimg:
@@ -188,7 +188,7 @@ const Cardsdata = [
     address: "VNR-3171 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 650 + order placed from here recently",
+    somedata: " 650 + people ordered this in the last 7 days",
     price: 490,
     rating: "4.2",
     arrimg:
@@ -202,7 +202,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 250,
     rating: "4.8",
     arrimg:
@@ -216,7 +216,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 250,
     rating: "4.8",
     arrimg:
@@ -230,7 +230,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 100,
     rating: "4.8",
     arrimg:
@@ -244,7 +244,7 @@ const Cardsdata = [
     address: "068 F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 350,
     rating: "4.7",
     arrimg:
@@ -258,7 +258,7 @@ const Cardsdata = [
     address: "NT77 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 170,
     rating: "4.5",
     arrimg:
@@ -272,7 +272,7 @@ const Cardsdata = [
     address: "YB-7 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 1175 + order placed from here recently",
+    somedata: " 1175 + people ordered this in the last 7 days",
     price: 110,
     rating: "4.7",
     arrimg:
@@ -286,7 +286,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 350,
     rating: "4.2",
     arrimg:
@@ -300,7 +300,7 @@ const Cardsdata = [
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 80,
     rating: "4.7",
     arrimg:
@@ -314,7 +314,7 @@ const Cardsdata = [
     address: "Red Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 120,
     rating: "4.9",
     arrimg:
@@ -328,7 +328,7 @@ const Cardsdata = [
     address: "Iris Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300 + people ordered this in the last 7 days",
     price: 720,
     rating: "4.6",
     arrimg:
