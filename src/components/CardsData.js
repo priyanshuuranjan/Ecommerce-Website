@@ -2,22 +2,21 @@ const Cardsdata = [
   {
     id: "dap",
     name: "DAP",
-    imgdata: "/images/fertilizer.jpg",
+    imgdata: "/images/dap1.jpg",
     address: "North Indian, Biryani, Mughlai",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 1175 + order placed from here recently",
     price: 350,
-    rating: "3.8",
+    rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
-    id: "hello",
+    id: "dap",
     name: "pesi Adda",
-    imgdata:
-      "https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg?output-format=webp",
+     imgdata: "/images/dap2.png",
     address: "Street Food",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
