@@ -196,14 +196,14 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "16",
+    id: "15",
     name: "BRINJAL",
     imgdata: "/images/seed/s17.jpg",
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + order placed from here recently",
-    price: 450,
+    price: 250,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -211,28 +211,70 @@ const Cardsdata = [
   },
   {
     id: "16",
-    name: "BRINJAL",
-    imgdata: "/images/seed/s17.jpg",
+    name: "COWPEA",
+    imgdata: "/images/seed/s18.jpg",
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + order placed from here recently",
-    price: 450,
+    price: 250,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
     qnty: 0,
   },
   {
-    id: "16",
-    name: "BRINJAL",
-    imgdata: "/images/seed/s17.jpg",
+    id: "17",
+    name: "CAULIFLOWER",
+    imgdata: "/images/seed/s19.jpg",
     address: "F1 Hybrid",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + order placed from here recently",
-    price: 450,
+    price: 100,
     rating: "4.8",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "18",
+    name: "CABBAGE",
+    imgdata: "/images/seed/s20.jpg",
+    address: "068 F1 Hybrid",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 350,
+    rating: "4.7",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "19",
+    name: "CHILLI",
+    imgdata: "/images/seed/s21.jpg",
+    address: "NT77 Hybrid",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 170,
+    rating: "4.5",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "20",
+    name: "LONG BEAN",
+    imgdata: "/images/seed/s22.jpg",
+    address: "YB-7 Hybrid",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
+    somedata: " 1175 + order placed from here recently",
+    price: 110,
+    rating: "4.7",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
     qnty: 0,
