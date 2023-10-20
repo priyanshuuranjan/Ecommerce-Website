@@ -102,20 +102,6 @@ const Nav = () => {
       border-bottom: 2px solid #000; /* Add a 2px thick solid black line under the headers */
       font-weight: bold; /* Make the text bold */
     }
-    .cart-close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: none;
-      border: 2px solid red;
-      font-size: 24px;
-      cursor: pointer;
-      color: #333; /* Color for the close button */
-    }
-
-    .cart-close-button:hover {
-      color: #ff0000; /* Change color on hover if desired */
-    }
 
     .cart-sidebar p {
       font-size: 18px; // cart size variable
@@ -232,17 +218,19 @@ const Nav = () => {
       padding: 0.8rem 1.4rem;
     }
 
-    @media (max-width: ${({ theme }) => theme.media.mobile}) {
-      .mobile-navbar-btn {
-        display: inline-block;
-        z-index: 9999;
-        border: ${({ theme }) => theme.colors.black};
+ @media (max-width: ${({ theme }) => theme.media.mobile}) {
+  .mobile-navbar-btn {
+    display: inline-block;
+    z-index: 9999;
+    border: ${({ theme }) => theme.colors.black};
 
-        .mobile-nav-icon {
-          font-size: 4.2rem;
-          color: ${({ theme }) => theme.colors.black};
-        }
-      }
+    .mobile-nav-icon {
+      font-size: 4.2rem;
+      color: ${({ theme }) => theme.colors.black};
+    }
+  }
+}
+
 
       .active .mobile-nav-icon {
         display: none;
@@ -365,12 +353,12 @@ const Nav = () => {
 
             {isCartOpen && (
               <div className="cart-sidebar">
-                <button
+                {/* <button
                   onClick={() => setIsCartOpen(false)}
                   className="cart-close-button"
                 >
                   &#10006;
-                </button>
+                </button> */}
 
                 {getdata.length > 0 ? (
                   <div
@@ -378,6 +366,7 @@ const Nav = () => {
                     style={{
                       width: "32rem",
                       padding: 10,
+                      height: "100%",
                       maxHeight: "100vh", //here i  Set the maximum height equal to the screen height
                       overflowY: "auto", // this is used to show the scroll bar
                     }}
