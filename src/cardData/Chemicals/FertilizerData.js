@@ -14,7 +14,7 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "groomer_dap",
+    id: "gromor_dap",
     name: "DAP",
     imgdata: "/images/dap2.png",
     address: "18:46:0",
@@ -36,21 +36,21 @@ const Cardsdata = [
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 650 + order placed from here recently",
     price: 1900,
-    rating: "4.2",
+    rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
-    id: "groomer_urea",
+    id: "gromor_urea",
     name: "UREA",
-    imgdata: "/images/urea2.png",
+    imgdata: "/images/urea.png",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
     price: 350,
-    rating: "4.4",
+    rating: "4.3",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
@@ -64,7 +64,7 @@ const Cardsdata = [
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
     price: 350,
-    rating: "4.4",
+    rating: "4.5",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
@@ -78,13 +78,13 @@ const Cardsdata = [
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
     price: 350,
-    rating: "4.4",
+    rating: "4.9",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
-    id: "groomer_super",
+    id: "gromor_super",
     name: "SUPER",
     imgdata: "/images/ssp.png",
     address: "16% P2O5",
@@ -98,15 +98,15 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "groomer_ssp",
-    name: "SUPER POWDER",
-    imgdata: "/images/ssp3.png",
-    address: "20% P2O5 ",
+    id: "npk",
+    name: "NPK",
+    imgdata: "/images/urea2.png",
+    address: "28:28:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
-    price: 350,
-    rating: "4.4",
+    price: 320,
+    rating: "4.6",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
