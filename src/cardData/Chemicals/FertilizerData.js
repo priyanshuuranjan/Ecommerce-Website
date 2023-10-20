@@ -56,9 +56,23 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "groomer_urea",
-    name: "UREA",
-    imgdata: "/images/urea2.png",
+    id: "calcium",
+    name: "CALCIUM",
+    imgdata: "/images/calcium.jpg",
+    address: "",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 350,
+    rating: "4.4",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "complex",
+    name: "COMPLEX",
+    imgdata: "/images/calcium2.jpg",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -70,10 +84,10 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "groomer_urea",
-    name: "UREA",
-    imgdata: "/images/urea2.png",
-    address: "46% N",
+    id: "groomer_super",
+    name: "SUPER",
+    imgdata: "/images/ssp.png",
+    address: "16% P2O5",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
@@ -84,24 +98,10 @@ const Cardsdata = [
     qnty: 0,
   },
   {
-    id: "groomer_urea",
-    name: "UREA",
-    imgdata: "/images/urea2.png",
-    address: "46% N",
-    delimg:
-      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 300 + order placed from here recently",
-    price: 350,
-    rating: "4.4",
-    arrimg:
-      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
-    qnty: 0,
-  },
-  {
-    id: "groomer_urea",
-    name: "UREA",
-    imgdata: "/images/urea2.png",
-    address: "46% N",
+    id: "groomer_ssp",
+    name: "SUPER POWDER",
+    imgdata: "/images/ssp3.png",
+    address: "20% P2O5 ",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
