@@ -1,29 +1,28 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Cardsdata from "./CardsData";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import fertilizerdata from "./FertilizerData";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import "./style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "../redux/actions/action";
 
 const Fertilizer = () => {
-
-  
-  const [data, setData] = useState(Cardsdata);
-  // console.log(data);
-
+  const [data, setData] = useState(fertilizerdata);
   const dispatch = useDispatch();
 
-  //add items 
   const send = (e) => {
-    // console.log(e);
     dispatch(ADD(e));
   };
 
   return (
     <Wrapper className="section">
       <div className="container mt-3">
+        <Link to="/" style={{ fontSize: 24, color: "grey" }}>
+          <BsFillArrowLeftCircleFill /> Home
+        </Link>
         <h2 className="text-center">Chemical Fertilizer's</h2>
 
         <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
@@ -42,7 +41,7 @@ const Fertilizer = () => {
                   />
                   <Card.Body>
                     <Card.Title>{element.name}</Card.Title>
-                    <Card.Text>Price : ₹ {element.price}</Card.Text>
+                    <Card.Text>Price: ₹ {element.price}</Card.Text>
                     <div className="button_div d-flex justify-content-center">
                       <Button
                         variant="primary"
