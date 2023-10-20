@@ -6,7 +6,7 @@ const Cardsdata = [
     address: "20:20:13",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 1175 + order placed from here recently",
+    somedata: " 1175+ people ordered this in the last 7 days",
     price: 1250,
     rating: "4.8",
     arrimg:
@@ -20,7 +20,7 @@ const Cardsdata = [
     address: "18:46:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 2525 + order placed from here recently",
+    somedata: " 2525+ people ordered this in the last 7 days",
     price: 1425,
     rating: "4.9",
     arrimg:
@@ -34,7 +34,7 @@ const Cardsdata = [
     address: "60% k2o",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 650 + order placed from here recently",
+    somedata: " 650+ people ordered this in the last 7 days",
     price: 1900,
     rating: "4.8",
     arrimg:
@@ -48,7 +48,7 @@ const Cardsdata = [
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 300+ people ordered this in the last 7 days",
     price: 350,
     rating: "4.3",
     arrimg:
@@ -62,7 +62,7 @@ const Cardsdata = [
     address: "",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 700+ people ordered this in the last 7 days",
     price: 350,
     rating: "4.5",
     arrimg:
@@ -76,7 +76,7 @@ const Cardsdata = [
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 455+ people ordered this in the last 7 days",
     price: 350,
     rating: "4.9",
     arrimg:
@@ -90,7 +90,7 @@ const Cardsdata = [
     address: "16% P2O5",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 298+ people ordered this in the last 7 days",
     price: 350,
     rating: "4.4",
     arrimg:
@@ -104,7 +104,7 @@ const Cardsdata = [
     address: "28:28:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 300 + order placed from here recently",
+    somedata: " 780+ people ordered this in the last 7 days",
     price: 320,
     rating: "4.6",
     arrimg:
