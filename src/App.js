@@ -13,8 +13,9 @@ import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import Footer from "./pages/footer/Footer";
 import Header from "./components/Header";
-import Fertilizer from "./components/Fertilizer";
+import Fertilizer from "./cardData/Chemicals/Fertilizer";
 import ProductDetail from "./components/ProductDetail";
+import Seed from "./cardData/Seeds/Seed";
 
 const App = () => {
   const theme = {
@@ -54,6 +55,7 @@ const App = () => {
         <Route exact path="/*" element={<Error />} />
         <Route exact path="/footer" element={<Footer />} />
         <Route exact path="/fertilizer" element={<Fertilizer />} />
+        <Route exact path="/seed" element={<Seed />} />
         <Route exact  path='/cart/:id'  element={<ProductDetail />} />
       </Routes>
       <Footer />

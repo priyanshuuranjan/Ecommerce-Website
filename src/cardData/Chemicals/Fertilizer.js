@@ -5,9 +5,9 @@ import fertilizerdata from "./FertilizerData";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
-import "./style.css";
+import "../style.css";
 import { useDispatch } from "react-redux";
-import { ADD } from "../redux/actions/action";
+import { ADD } from "../../redux/actions/action";
 
 const Fertilizer = () => {
   const [data, setData] = useState(fertilizerdata);
