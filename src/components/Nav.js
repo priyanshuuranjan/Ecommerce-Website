@@ -88,6 +88,7 @@ const Nav = () => {
       position: fixed;
       top: 0;
       right: 0;
+      width: 100%;
       width: 350px;
       height: 100%;
       background: #fff;
@@ -218,19 +219,17 @@ const Nav = () => {
       padding: 0.8rem 1.4rem;
     }
 
- @media (max-width: ${({ theme }) => theme.media.mobile}) {
-  .mobile-navbar-btn {
-    display: inline-block;
-    z-index: 9999;
-    border: ${({ theme }) => theme.colors.black};
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      .mobile-navbar-btn {
+        display: inline-block;
+        z-index: 9999;
+        border: ${({ theme }) => theme.colors.black};
 
-    .mobile-nav-icon {
-      font-size: 4.2rem;
-      color: ${({ theme }) => theme.colors.black};
-    }
-  }
-}
-
+        .mobile-nav-icon {
+          font-size: 4.2rem;
+          color: ${({ theme }) => theme.colors.black};
+        }
+      }
 
       .active .mobile-nav-icon {
         display: none;
