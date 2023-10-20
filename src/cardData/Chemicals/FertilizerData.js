@@ -55,6 +55,62 @@ const Cardsdata = [
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
+  {
+    id: "groomer_urea",
+    name: "UREA",
+    imgdata:"/images/urea2.png",
+    address: "46% N",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 350,
+    rating: "4.4",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "groomer_urea",
+    name: "UREA",
+    imgdata:"/images/urea2.png",
+    address: "46% N",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 350,
+    rating: "4.4",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "groomer_urea",
+    name: "UREA",
+    imgdata:"/images/urea2.png",
+    address: "46% N",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 350,
+    rating: "4.4",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "groomer_urea",
+    name: "UREA",
+    imgdata:"/images/urea2.png",
+    address: "46% N",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 300 + order placed from here recently",
+    price: 350,
+    rating: "4.4",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  }
 ];
 
 export default Cardsdata;
