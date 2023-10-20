@@ -387,7 +387,7 @@ const Nav = () => {
                         <tr style={{ fontSize: 17 }}>
                           <th className="cart-table-header">
                             <MdArrowBack
-                              style={{ cursor: "pointer", fontSize: "24px" }} // Customize the icon size and cursor style
+                              style={{ cursor: "pointer", fontSize: "25px" }} // Customize the icon size and cursor style
                               onClick={() => setIsCartOpen(false)} // Add the function to close the menu bar
                             />
                             Photo
