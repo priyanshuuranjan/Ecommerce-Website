@@ -114,7 +114,7 @@ const EquipmentData = [
     {
         id: "9",
         name: "Water Pump",
-        imgdata: "/images/tool/p7.jpg",
+        imgdata: "/images/tool/p9.jpg",
         address: "Single Motor",
         delimg:
           "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -128,7 +128,7 @@ const EquipmentData = [
       {
         id: "10",
         name: "Sprayer",
-        imgdata: "/images/tool/p7.jpg",
+        imgdata: "/images/tool/p10.jpg",
         address: "4-5 HP",
         delimg:
           "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
