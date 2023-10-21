@@ -1,13 +1,13 @@
 const PesticideData = [
     {
       id: "1",
-      name: " BITTER GOURD",
-      imgdata: "/images/seed/s1.jpg",
-      address: "VNR NT 77",
+      name: "Saaf",
+      imgdata: "/images/fungicide/s1.jpg",
+      address: "Mancozeb 63%",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 1175 + people ordered this in the last 7 days",
-      price: 580,
+      price: 200,
       rating: "4.7",
       arrimg:
         "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -15,13 +15,13 @@ const PesticideData = [
     },
     {
       id: "2",
-      name: " TOMATO",
-      imgdata: "/images/seed/s2.jpg",
-      address: "VNR 3171",
+      name: " Antracol",
+      imgdata: "/images/fungifungicidex/s2.jpg",
+      address: "Propineb 70%",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 2525 + people ordered this in the last 7 days",
-      price: 180,
+      price: 190,
       rating: "4.9",
       arrimg:
         "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -29,13 +29,13 @@ const PesticideData = [
     },
     {
       id: "3",
-      name: "BRINJAL",
-      imgdata: "/images/seed/s3.jpg",
-      address: "F1 Hybrid",
+      name: "Bavistin",
+      imgdata: "/images/fungifungicidex/s3.jpg",
+      address: "Crystal",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 650 + people ordered this in the last 7 days",
-      price: 490,
+      price: 180,
       rating: "4.2",
       arrimg:
         "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -43,9 +43,9 @@ const PesticideData = [
     },
     {
       id: "4",
-      name: "CAULIFLOWER",
-      imgdata: "/images/seed/s4.jpg",
-      address: "Clause",
+      name: "Amistar",
+      imgdata: "/images/fungicidex/s4.jpg",
+      address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 300 + people ordered this in the last 7 days",
@@ -57,9 +57,9 @@ const PesticideData = [
     },
     {
       id: "5",
-      name: "BRINJAL",
-      imgdata: "/images/seed/s5.jpg",
-      address: " F1 Hybrid",
+      name: "Amistar Top",
+      imgdata: "/images/fungicidex/s10.jpg",
+      address: " Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 2525 + people ordered this in the last 7 days",
@@ -71,13 +71,13 @@ const PesticideData = [
     },
     {
       id: "6",
-      name: "PEA",
-      imgdata: "/images/seed/s6.jpg",
-      address: "F1 Hybrid",
+      name: "Achook",
+      imgdata: "/images/fungicidex/s6.jpg",
+      address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 650 + people ordered this in the last 7 days",
-      price: 390,
+      price: 120,
       rating: "4.6",
       arrimg:
         "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -85,13 +85,13 @@ const PesticideData = [
     },
     {
       id: "7",
-      name: "BRINJAL",
-      imgdata: "/images/seed/s7.jpg",
-      address: "BSS 1031",
+      name: "Macobanc",
+      imgdata: "/images/fungicidex/s7.jpg",
+      address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 1300 + people ordered this in the last 7 days",
-      price: 310,
+      price: 90,
       rating: "4.2",
       arrimg:
         "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -99,13 +99,13 @@ const PesticideData = [
     },
     {
       id: "8",
-      name: "BOTTLE GOURD",
-      imgdata: "/images/seed/s8.jpg",
-      address: "F1 Hybrid",
+      name: "Metamack",
+      imgdata: "/images/fungicide/s8.jpg",
+      address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 222 + people ordered this in the last 7 days",
-      price: 350,
+      price: 100,
       rating: "4.0",
       arrimg:
         "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -113,9 +113,9 @@ const PesticideData = [
     },
     {
       id: "9",
-      name: "BITTER GOURD",
-      imgdata: "/images/seed/s9.jpg",
-      address: "SW-811",
+      name: "Fossil",
+      imgdata: "/images/fungicide/s9.jpg",
+      address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 300 + people ordered this in the last 7 days",
@@ -127,13 +127,13 @@ const PesticideData = [
     },
     {
       id: "10",
-      name: "BITTER GOURD",
-      imgdata: "/images/seed/s10.jpg",
-      address: "065 F1 Hybrid",
+      name: "Dhanuka M-45",
+      imgdata: "/images/fungicide/s10.jpg",
+      address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
       somedata: " 300 + people ordered this in the last 7 days",
-      price: 850,
+      price: 560,
       rating: "4.7",
       arrimg:
         "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
