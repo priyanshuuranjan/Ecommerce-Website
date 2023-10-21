@@ -112,3 +112,4 @@ const HerbicideData = [
     qnty: 0,
   },
 ];
+export default HerbicideData;
