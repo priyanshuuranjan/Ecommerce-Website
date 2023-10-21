@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import PesticideData from "./PesticideData";
+import PlantData from "./PlantData";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
@@ -9,8 +9,8 @@ import "../style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action";
 
-const Pesticide= () => {
-  const [data, setData] = useState(PesticideData);
+const Pesticide = () => {
+  const [data, setData] = useState(PlantData);
   const dispatch = useDispatch();
 
   const send = (e) => {
@@ -23,7 +23,7 @@ const Pesticide= () => {
         <Link to="/" style={{ fontSize: 24, color: "grey" }}>
           <BsFillArrowLeftCircleFill /> Home
         </Link>
-        <h2 className="text-center">Pesticide's</h2>
+        <h2 className="text-center">Plant Nutrition's</h2>
 
         <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
           {data.map((element, id) => {
