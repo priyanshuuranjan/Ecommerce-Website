@@ -141,7 +141,7 @@ const PesticideData = [
   },
   {
     id: "11",
-    name: "BITTER GOURD",
+    name: "Monocil",
     imgdata: "/images/insecticide/s11.jpg",
     address: "Insecticide",
     delimg:
@@ -155,7 +155,7 @@ const PesticideData = [
   },
   {
     id: "12",
-    name: "CUCUMBER",
+    name: "Pegasus",
     imgdata: "/images/insecticide/s12.jpg",
     address: "Insecticide",
     delimg:
@@ -169,7 +169,7 @@ const PesticideData = [
   },
   {
     id: "13",
-    name: "BHINDI",
+    name: "Actara",
     imgdata: "/images/insecticide/s14.jpg",
     address: "Insecticide",
     delimg:
@@ -183,13 +183,13 @@ const PesticideData = [
   },
   {
     id: "14",
-    name: "TOMATO",
+    name: "Admire",
     imgdata: "/images/insecticide/s16.jpg",
     address: "Insecticide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 650 + people ordered this in the last 7 days",
-    price: 490,
+    price: 290,
     rating: "4.2",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -197,13 +197,13 @@ const PesticideData = [
   },
   {
     id: "15",
-    name: "BRINJAL",
+    name: "Coragen",
     imgdata: "/images/insecticide/s17.jpg",
     address: "Insecticide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + people ordered this in the last 7 days",
-    price: 250,
+    price: 2500,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -211,13 +211,13 @@ const PesticideData = [
   },
   {
     id: "16",
-    name: "COWPEA",
+    name: "Biodose",
     imgdata: "/images/insecticide/s18.jpg",
     address: "Insecticide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + people ordered this in the last 7 days",
-    price: 250,
+    price: 320,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -225,7 +225,7 @@ const PesticideData = [
   },
   {
     id: "17",
-    name: "CAULIFLOWER",
+    name: "Kri-Star",
     imgdata: "/images/insecticide/s19.jpg",
     address: "Insecticide",
     delimg:
@@ -238,14 +238,14 @@ const PesticideData = [
     qnty: 0,
   },
   {
-    id: "18",
+    id: "Anth",
     name: "CABBAGE",
     imgdata: "/images/insecticide/s20.jpg",
     address: "Insecticide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + people ordered this in the last 7 days",
-    price: 350,
+    price: 280,
     rating: "4.7",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -253,13 +253,13 @@ const PesticideData = [
   },
   {
     id: "19",
-    name: "CHILLI",
+    name: "Profex",
     imgdata: "/images/insecticide/s21.jpg",
     address: "Insecticide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + people ordered this in the last 7 days",
-    price: 170,
+    price: 470,
     rating: "4.5",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -267,13 +267,13 @@ const PesticideData = [
   },
   {
     id: "20",
-    name: "LONG BEAN",
+    name: "Ekka",
     imgdata: "/images/insecticide/s23.jpg",
     address: "Insecticide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 1175 + people ordered this in the last 7 days",
-    price: 110,
+    price: 160,
     rating: "4.7",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
