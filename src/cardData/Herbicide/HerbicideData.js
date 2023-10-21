@@ -1,7 +1,7 @@
 const HerbicideData = [
   {
     id: "11",
-    name: "Monocil",
+    name: "Saathi",
     imgdata: "/images/Herbicide/s11.jpg",
     address: "Herbicide",
     delimg:
@@ -15,13 +15,13 @@ const HerbicideData = [
   },
   {
     id: "12",
-    name: "Pegasus",
+    name: "Mera71",
     imgdata: "/images/Herbicide/s12.jpg",
     address: "Herbicide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 1175 + people ordered this in the last 7 days",
-    price: 110,
+    price: 190,
     rating: "4.7",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -29,8 +29,8 @@ const HerbicideData = [
   },
   {
     id: "13",
-    name: "Actara",
-    imgdata: "/images/Herbicide/s14.jpg",
+    name: "Weedmar-38",
+    imgdata: "/images/Herbicide/s13.jpg",
     address: "Herbicide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -43,13 +43,13 @@ const HerbicideData = [
   },
   {
     id: "14",
-    name: "Admire",
+    name: "Weedmar-80",
     imgdata: "/images/Herbicide/s16.jpg",
     address: "Herbicide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 650 + people ordered this in the last 7 days",
-    price: 290,
+    price: 300,
     rating: "4.2",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -57,13 +57,13 @@ const HerbicideData = [
   },
   {
     id: "15",
-    name: "Coragen",
+    name: "Atlantis",
     imgdata: "/images/Herbicide/s17.jpg",
     address: "Herbicide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + people ordered this in the last 7 days",
-    price: 2500,
+    price: 250,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -71,7 +71,7 @@ const HerbicideData = [
   },
   {
     id: "16",
-    name: "Biodose",
+    name: "Roundup",
     imgdata: "/images/Herbicide/s18.jpg",
     address: "Herbicide",
     delimg:
@@ -85,13 +85,13 @@ const HerbicideData = [
   },
   {
     id: "17",
-    name: "Kri-Star",
-    imgdata: "/images/Herbicide/s19.jpg",
+    name: "Weedmar Super",
+    imgdata: "/images/Herbicide/s14.jpg",
     address: "Herbicide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + people ordered this in the last 7 days",
-    price: 100,
+    price: 400,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
@@ -99,13 +99,13 @@ const HerbicideData = [
   },
   {
     id: "18",
-    name: "CABBAGE",
-    imgdata: "/images/Herbicide/s20.jpg",
+    name: "Total",
+    imgdata: "/images/Herbicide/s15.jpg",
     address: "Herbicide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
     somedata: " 300 + people ordered this in the last 7 days",
-    price: 280,
+    price: 80,
     rating: "4.7",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.jpg?output-format=webp",
