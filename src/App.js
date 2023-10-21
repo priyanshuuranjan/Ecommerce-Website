@@ -17,6 +17,7 @@ import Fertilizer from "./cardData/Chemicals/Fertilizer";
 import ProductDetail from "./components/ProductDetail";
 import Seed from "./cardData/Seeds/Seed";
 import Equipment from "./cardData/Equipment/Equipment";
+import Pesticide from "./cardData/Pesticides/Pesticide";
 
 const App = () => {
   const theme = {
@@ -58,6 +59,7 @@ const App = () => {
         <Route exact path="/fertilizer" element={<Fertilizer />} />
         <Route exact path="/seed" element={<Seed />} />
         <Route exact path="/equipment" element={<Equipment/>} />
+        <Route exact path="/pesticide" element={<Pesticide/>} />
         <Route exact  path='/cart/:id'  element={<ProductDetail />} />
       </Routes>
       <Footer />
