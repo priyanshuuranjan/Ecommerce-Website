@@ -20,6 +20,7 @@ import Equipment from "./cardData/Equipment/Equipment";
 import Pesticide from "./cardData/Pesticides/Pesticide";
 import Herbicide from "./cardData/Herbicide/Herbicide";
 import Plant from "./cardData/Plants/Plant";
+import FeatureProduct from "./components/FeatureProduct";
 
 const App = () => {
   const theme = {
@@ -55,6 +56,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/product" element={<FeatureProduct />} />
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/*" element={<Error />} />
         <Route exact path="/footer" element={<Footer />} />

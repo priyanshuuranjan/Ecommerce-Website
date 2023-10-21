@@ -41,7 +41,7 @@ const FeatureProduct = () => {
   const navigate = useNavigate();
 
 function navigateToProduct(category) {
-  navigate(`/${category}`);
+  navigate(`/${category}{id}`);
 }
   return (
     <Wrapper className="section">
@@ -54,7 +54,7 @@ function navigateToProduct(category) {
             <Product
               key={curElem.id}
               {...curElem}
-              onClick={() => navigateToProduct(curElem.id)}
+              onClick={() => navigateToProduct(curElem.name)}
             />
           );
         })}
