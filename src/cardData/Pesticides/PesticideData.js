@@ -16,7 +16,7 @@ const PesticideData = [
     {
       id: "2",
       name: " Antracol",
-      imgdata: "/images/fungifungicidex/s2.jpg",
+      imgdata: "/images/fungicide/s2.jpg",
       address: "Propineb 70%",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -30,7 +30,7 @@ const PesticideData = [
     {
       id: "3",
       name: "Bavistin",
-      imgdata: "/images/fungifungicidex/s3.jpg",
+      imgdata: "/images/fungicide/s3.jpg",
       address: "Crystal",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -44,7 +44,7 @@ const PesticideData = [
     {
       id: "4",
       name: "Amistar",
-      imgdata: "/images/fungicidex/s4.jpg",
+      imgdata: "/images/fungicide/s4.jpg",
       address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -58,7 +58,7 @@ const PesticideData = [
     {
       id: "5",
       name: "Amistar Top",
-      imgdata: "/images/fungicidex/s10.jpg",
+      imgdata: "/images/fungicide/s10.jpg",
       address: " Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -72,7 +72,7 @@ const PesticideData = [
     {
       id: "6",
       name: "Achook",
-      imgdata: "/images/fungicidex/s6.jpg",
+      imgdata: "/images/fungicide/s6.jpg",
       address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -86,7 +86,7 @@ const PesticideData = [
     {
       id: "7",
       name: "Macobanc",
-      imgdata: "/images/fungicidex/s7.jpg",
+      imgdata: "/images/fungicide/s7.jpg",
       address: "Fungicides",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -142,7 +142,7 @@ const PesticideData = [
     {
       id: "11",
       name: "BITTER GOURD",
-      imgdata: "/images/seed/s11.jpg",
+      imgdata: "/images/insecticide/s11.jpg",
       address: "NT77 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -156,7 +156,7 @@ const PesticideData = [
     {
       id: "12",
       name: "CUCUMBER",
-      imgdata: "/images/seed/s12.jpg",
+      imgdata: "/images/insecticide/s12.jpg",
       address: "F1 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -170,7 +170,7 @@ const PesticideData = [
     {
       id: "13",
       name: "BHINDI",
-      imgdata: "/images/seed/s14.jpg",
+      imgdata: "/images/insecticide/s14.jpg",
       address: "VS-862",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -184,7 +184,7 @@ const PesticideData = [
     {
       id: "14",
       name: "TOMATO",
-      imgdata: "/images/seed/s16.jpg",
+      imgdata: "/images/insecticide/s16.jpg",
       address: "VNR-3171 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -198,7 +198,7 @@ const PesticideData = [
     {
       id: "15",
       name: "BRINJAL",
-      imgdata: "/images/seed/s17.jpg",
+      imgdata: "/images/insecticide/s17.jpg",
       address: "F1 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -212,7 +212,7 @@ const PesticideData = [
     {
       id: "16",
       name: "COWPEA",
-      imgdata: "/images/seed/s18.jpg",
+      imgdata: "/images/insecticide/s18.jpg",
       address: "F1 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -226,7 +226,7 @@ const PesticideData = [
     {
       id: "17",
       name: "CAULIFLOWER",
-      imgdata: "/images/seed/s19.jpg",
+      imgdata: "/images/insecticide/s19.jpg",
       address: "F1 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -240,7 +240,7 @@ const PesticideData = [
     {
       id: "18",
       name: "CABBAGE",
-      imgdata: "/images/seed/s20.jpg",
+      imgdata: "/images/insecticide/s20.jpg",
       address: "068 F1 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -254,7 +254,7 @@ const PesticideData = [
     {
       id: "19",
       name: "CHILLI",
-      imgdata: "/images/seed/s21.jpg",
+      imgdata: "/images/insecticide/s21.jpg",
       address: "NT77 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -268,7 +268,7 @@ const PesticideData = [
     {
       id: "20",
       name: "LONG BEAN",
-      imgdata: "/images/seed/s22.jpg",
+      imgdata: "/images/insecticide/s22.jpg",
       address: "YB-7 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -282,7 +282,7 @@ const PesticideData = [
     {
       id: "21",
       name: "ONION",
-      imgdata: "/images/seed/s23.jpg",
+      imgdata: "/images/insecticide/s23.jpg",
       address: "F1 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -296,7 +296,7 @@ const PesticideData = [
     {
       id: "22",
       name: "RADISH",
-      imgdata: "/images/seed/s26.jpg",
+      imgdata: "/images/insecticide/s26.jpg",
       address: "F1 Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -310,7 +310,7 @@ const PesticideData = [
     {
       id: "23",
       name: "SPINACH",
-      imgdata: "/images/seed/s25.jpg",
+      imgdata: "/images/insecticide/s25.jpg",
       address: "Red Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
@@ -324,7 +324,7 @@ const PesticideData = [
     {
       id: "24",
       name: "SQUASH",
-      imgdata: "/images/seed/s27.jpg",
+      imgdata: "/images/insecticide/s27.jpg",
       address: "Iris Hybrid",
       delimg:
         "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.jpg?output-format=webp",
