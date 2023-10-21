@@ -11,7 +11,6 @@ const Product = ({ id, name, image, onClick }) => {
       <div className="card">
         <figure>
           <img src={image} alt={name} />
-          {/* <figcaption className="caption">{somedata}</figcaption> */}
         </figure>
 
         <div className="card-data">
