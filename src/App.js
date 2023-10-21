@@ -18,6 +18,7 @@ import ProductDetail from "./components/ProductDetail";
 import Seed from "./cardData/Seeds/Seed";
 import Equipment from "./cardData/Equipment/Equipment";
 import Pesticide from "./cardData/Pesticides/Pesticide";
+import Herbicide from "./cardData/Herbicide/Herbicide";
 
 const App = () => {
   const theme = {
@@ -60,6 +61,7 @@ const App = () => {
         <Route exact path="/seed" element={<Seed />} />
         <Route exact path="/equipment" element={<Equipment/>} />
         <Route exact path="/pesticide" element={<Pesticide/>} />
+        <Route exact path="/herbicide" element={<Herbicide/>} />
         <Route exact  path='/cart/:id'  element={<ProductDetail />} />
       </Routes>
       <Footer />

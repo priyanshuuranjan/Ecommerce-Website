@@ -238,7 +238,7 @@ const PesticideData = [
     qnty: 0,
   },
   {
-    id: "Anth",
+    id: "18",
     name: "CABBAGE",
     imgdata: "/images/insecticide/s20.jpg",
     address: "Insecticide",
