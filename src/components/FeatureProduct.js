@@ -21,8 +21,18 @@ const featureProducts = [
   },
   {
     id: "pesticide",
-    name: "pesticide",
+    name: "pesticides",
     image: "/images/pesticide.jpg",
+  },
+  {
+    id: "herbicide",
+    name: "herbicides",
+    image: "/images/herbicide.jpg",
+  },
+  {
+    id: "plantNutrition",
+    name: "plant nutrition",
+    image: "/images/plant.jpg",
   },
 ];
 

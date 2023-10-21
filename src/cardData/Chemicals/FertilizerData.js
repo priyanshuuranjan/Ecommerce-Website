@@ -2,7 +2,7 @@ const Cardsdata = [
   {
     id: "dap",
     name: "DAP",
-    imgdata: "/images/dap1.PNG",
+    imgdata: "/images/chemicals/dap1.PNG",
     address: "20:20:13",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -16,7 +16,7 @@ const Cardsdata = [
   {
     id: "gromor_dap",
     name: "DAP",
-    imgdata: "/images/dap2.png",
+    imgdata: "/images/chemicals/dap2.png",
     address: "18:46:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -30,7 +30,7 @@ const Cardsdata = [
   {
     id: "mop",
     name: "POTASH",
-    imgdata: "/images/mop.PNG",
+    imgdata: "/images/chemicals/mop.PNG",
     address: "60% k2o",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -44,7 +44,7 @@ const Cardsdata = [
   {
     id: "gromor_urea",
     name: "UREA",
-    imgdata: "/images/urea.png",
+    imgdata: "/images/chemicals/urea.png",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -58,7 +58,7 @@ const Cardsdata = [
   {
     id: "calcium",
     name: "CALCIUM",
-    imgdata: "/images/calcium.jpg",
+    imgdata: "/images/chemicals/calcium.jpg",
     address: "",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -72,7 +72,7 @@ const Cardsdata = [
   {
     id: "complex",
     name: "COMPLEX",
-    imgdata: "/images/calcium2.jpg",
+    imgdata: "/images/chemicals/calcium2.jpg",
     address: "46% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -86,7 +86,7 @@ const Cardsdata = [
   {
     id: "gromor_super",
     name: "SUPER",
-    imgdata: "/images/ssp.png",
+    imgdata: "/images/chemicals/ssp.png",
     address: "16% P2O5",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -100,7 +100,7 @@ const Cardsdata = [
   {
     id: "npk",
     name: "NPK",
-    imgdata: "/images/urea2.png",
+    imgdata: "/images/chemicals/urea2.png",
     address: "28:28:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
