@@ -1,13 +1,13 @@
 const PlantData = [
   {
     id: "1",
-    name: "Power Charger",
-    imgdata: "/images/tool/p1.jpg",
-    address: "Samson 12V",
+    name: "Top plush",
+    imgdata: "/images/plant/p1.jpg",
+    address: "16% S,N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
-    somedata: " 1175+ people ordered this in the last 7 days",
-    price: 450,
+    somedata: " 298+ people ordered this in the last 7 days",
+    price: 400,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -15,13 +15,13 @@ const PlantData = [
   },
   {
     id: "2",
-    name: "Field Switch",
-    imgdata: "/images/tool/p2.jpg",
-    address: "20mm Wire",
+    name: "Nano Urea",
+    imgdata: "/images/plant/p2.jpg",
+    address: "60% N",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 2525+ people ordered this in the last 7 days",
-    price: 50,
+    price:300,
     rating: "4.9",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -29,13 +29,13 @@ const PlantData = [
   },
   {
     id: "3",
-    name: "Nozzle",
-    imgdata: "/images/tool/p3.jpg",
-    address: "Flower Type",
+    name: "Nano Dap",
+    imgdata: "/images/plant/p3.jpg",
+    address: "8:16:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 650+ people ordered this in the last 7 days",
-    price: 80,
+    price: 1100,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -43,13 +43,13 @@ const PlantData = [
   },
   {
     id: "4",
-    name: "Double Motor Pump",
-    imgdata: "/images/tool/p4.jpg",
-    address: "B-708 (18L)",
+    name: "Borofat",
+    imgdata: "/images/plant/p4.jpg",
+    address: "11% B",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300+ people ordered this in the last 7 days",
-    price: 3166,
+    price: 120,
     rating: "4.3",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -57,13 +57,13 @@ const PlantData = [
   },
   {
     id: "5",
-    name: "Spayer Tank",
-    imgdata: "/images/tool/p5.jpg",
-    address: "HBO 708 (16L)",
+    name: "Zinc",
+    imgdata: "/images/plant/p5.jpg",
+    address: "33%",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 700+ people ordered this in the last 7 days",
-    price: 2599,
+    price: 99,
     rating: "4.5",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -71,13 +71,13 @@ const PlantData = [
   },
   {
     id: "6",
-    name: "Gloves",
-    imgdata: "/images/tool/p6.jpg",
-    address: "Darit Rubbler ",
+    name: "Weedmar-80",
+    imgdata: "/images/plant/p6.jpg",
+    address: "2-4-D ",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 455+ people ordered this in the last 7 days",
-    price: 110,
+    price: 300,
     rating: "4.9",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -85,13 +85,13 @@ const PlantData = [
   },
   {
     id: "7",
-    name: " Battery Sprayer",
-    imgdata: "/images/tool/p7.jpg",
-    address: "B- 708 (20L)",
+    name: " Boron",
+    imgdata: "/images/plant/p7.jpg",
+    address: "14.5% B",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 298+ people ordered this in the last 7 days",
-    price: 350,
+    price: 150,
     rating: "4.4",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -99,9 +99,9 @@ const PlantData = [
   },
   {
     id: "8",
-    name: " Trigger Gun ",
-    imgdata: "/images/tool/p8.jpg",
-    address: "Hard Plastic",
+    name: " Sulphur ",
+    imgdata: "/images/plant/p8.jpg",
+    address: "20% S",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 780+ people ordered this in the last 7 days",
@@ -113,13 +113,13 @@ const PlantData = [
   },
   {
     id: "9",
-    name: "Water Pump",
-    imgdata: "/images/tool/p9.jpg",
-    address: "Single Motor",
+    name: "Sulphate",
+    imgdata: "/images/plant/p9.png",
+    address: "22% Sul",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 298+ people ordered this in the last 7 days",
-    price: 500,
+    price: 140,
     rating: "4.4",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -127,13 +127,69 @@ const PlantData = [
   },
   {
     id: "10",
-    name: "Sprayer",
-    imgdata: "/images/tool/p10.jpg",
-    address: "4-5 HP",
+    name: "Shimo",
+    imgdata: "/images/plant/p10.jpg",
+    address: "Fungicide",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 298+ people ordered this in the last 7 days",
-    price: 6000,
+    price: 60,
+    rating: "4.8",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "12",
+    name: "AllWin Wonder",
+    imgdata: "/images/plant/p12.jpg",
+    address: "22% C",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 298+ people ordered this in the last 7 days",
+    price: 400,
+    rating: "5.0",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "13",
+    name: "AllWin Super",
+    imgdata: "/images/plant/p14.jpg",
+    address: "40% C,N,S",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 298+ people ordered this in the last 7 days",
+    price: 800,
+    rating: "4.9",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "14",
+    name: "Neem Powder",
+    imgdata: "/images/plant/p17.jpg",
+    address: "100% Pure",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 298+ people ordered this in the last 7 days",
+    price: 230,
+    rating: "4.8",
+    arrimg:
+      "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
+    qnty: 0,
+  },
+  {
+    id: "15",
+    name: "Vermicompost",
+    imgdata: "/images/plant/p18.jpg",
+    address: "100% Natural",
+    delimg:
+      "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
+    somedata: " 298+ people ordered this in the last 7 days",
+    price: 600,
     rating: "4.8",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",

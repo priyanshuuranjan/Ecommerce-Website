@@ -60,11 +60,11 @@ const App = () => {
         <Route exact path="/footer" element={<Footer />} />
         <Route exact path="/fertilizer" element={<Fertilizer />} />
         <Route exact path="/seed" element={<Seed />} />
-        <Route exact path="/equipment" element={<Equipment/>} />
-        <Route exact path="/pesticide" element={<Pesticide/>} />
-        <Route exact path="/herbicide" element={<Herbicide/>} />
-        <Route exact path="/plantNutrition" element={<Plant/>} />
-        <Route exact  path='/cart/:id'  element={<ProductDetail />} />
+        <Route exact path="/equipment" element={<Equipment />} />
+        <Route exact path="/pesticide" element={<Pesticide />} />
+        <Route exact path="/herbicide" element={<Herbicide />} />
+        <Route exact path="/plantNutrition" element={<Plant />} />
+        <Route exact path="/cart/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </ThemeProvider>
