@@ -20,7 +20,7 @@ const Fertilizer = () => {
   };
 
   const notify = () =>
-    toast.success("🦄 Item Add In Your Cart!", {
+    toast.success("🦄 Item Added In Your Cart", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
