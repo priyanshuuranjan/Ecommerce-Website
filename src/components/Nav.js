@@ -6,9 +6,9 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import { DLT } from "../redux/actions/action";
 import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
-// import Menu from "@mui/material/Menu";
-// import MenuItem from "@mui/material/MenuItem";
+import { BsPlusLg } from 'react-icons/bs';
 import { MdArrowBack } from "react-icons/md";
+import {BiMinus } from "react-icons/bi";
 
 // import "./style.css";
 import { REMOVE, ADD } from "../redux/actions/action";
@@ -450,13 +450,13 @@ const Nav = () => {
                                       transition: "background-color 0.3s",
                                     }}
                                   >
-                                    -
+                                    <BiMinus size={12}/>
                                   </span>
                                 </span>
                                 {item.qnty}
                                 <span
                                   style={{
-                                    fontSize: "16px", // Set the font size to 16px
+                                    fontSize: "14px", // Set the font size to 16px
                                     cursor: "pointer",
                                     paddingLeft: "10px",
                                   }}
@@ -473,7 +473,7 @@ const Nav = () => {
                                       transition: "background-color 0.3s",
                                     }}
                                   >
-                                    +
+                                       <BsPlusLg size={12} />
                                   </span>
                                 </span>
                               </p>
