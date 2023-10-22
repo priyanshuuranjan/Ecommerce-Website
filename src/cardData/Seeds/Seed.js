@@ -17,13 +17,28 @@ const Seed = () => {
     dispatch(ADD(e));
   };
 
+  const notify = () =>
+    toast.success("🦄 Item Added In Your Cart", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      style: {
+        fontSize: "18px",
+      },
+    });
+
   return (
     <Wrapper className="section">
       <div className="container mt-3">
         <Link to="/" style={{ fontSize: 24, color: "grey" }}>
           <BsFillArrowLeftCircleFill /> Home
         </Link>
-        <h2 className="text-center">Vegetable Seeds's</h2>
+        <h2 className="text-center">Chemical Fertilizer's</h2>
 
         <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
           {data.map((element, id) => {
@@ -45,7 +60,10 @@ const Seed = () => {
                     <div className="button_div d-flex justify-content-center">
                       <Button
                         variant="primary"
-                        onClick={() => send(element)}
+                        onClick={() => {
+                          send(element);
+                          notify();
+                        }}
                         className="col-lg-12"
                       >
                         Add to Cart
@@ -58,6 +76,7 @@ const Seed = () => {
           })}
         </div>
       </div>
+      <ToastContainer />
     </Wrapper>
   );
 };
