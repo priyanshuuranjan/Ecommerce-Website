@@ -8,14 +8,19 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import "../style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Fertilizer = () => {
+ 
   const [data, setData] = useState(fertilizerdata);
   const dispatch = useDispatch();
 
   const send = (e) => {
     dispatch(ADD(e));
   };
+
+  const notify = () => toast("Item Add In Your Cart");
 
   return (
     <Wrapper className="section">
@@ -45,7 +50,10 @@ const Fertilizer = () => {
                     <div className="button_div d-flex justify-content-center">
                       <Button
                         variant="primary"
-                        onClick={() => send(element)}
+                        onClick={() => {
+                          send(element);
+                          notify();
+                        }}
                         className="col-lg-12"
                       >
                         Add to Cart
@@ -58,6 +66,7 @@ const Fertilizer = () => {
           })}
         </div>
       </div>
+      <ToastContainer />
     </Wrapper>
   );
 };
