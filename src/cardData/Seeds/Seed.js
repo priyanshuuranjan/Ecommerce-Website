@@ -10,8 +10,6 @@ import { useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const Seed = () => {
   const [data, setData] = useState(seeddata);
