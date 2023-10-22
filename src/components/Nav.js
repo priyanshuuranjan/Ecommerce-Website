@@ -6,9 +6,9 @@ import { CgMenu, CgClose } from "react-icons/cg";
 import { DLT } from "../redux/actions/action";
 import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
-import { BsPlusLg } from 'react-icons/bs';
+import { BsPlusLg } from "react-icons/bs";
 import { MdArrowBack } from "react-icons/md";
-import {BiMinus } from "react-icons/bi";
+import { BiMinus } from "react-icons/bi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { REMOVE, ADD } from "../redux/actions/action";
@@ -466,7 +466,7 @@ const Nav = () => {
                                       transition: "background-color 0.3s",
                                     }}
                                   >
-                                    <BiMinus size={12}/>
+                                    <BiMinus size={12} />
                                   </span>
                                 </span>
                                 {item.qnty}
@@ -476,7 +476,9 @@ const Nav = () => {
                                     cursor: "pointer",
                                     paddingLeft: "10px",
                                   }}
-                                  onClick={() => {send(item); notify();
+                                  onClick={() => {
+                                    send(item);
+                                    notify();
                                   }}
                                 >
                                   <span
@@ -490,7 +492,7 @@ const Nav = () => {
                                       transition: "background-color 0.3s",
                                     }}
                                   >
-                                       <BsPlusLg size={12} />
+                                    <BsPlusLg size={12} />
                                   </span>
                                 </span>
                               </p>
