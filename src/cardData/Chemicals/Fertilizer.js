@@ -12,7 +12,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Fertilizer = () => {
- 
   const [data, setData] = useState(fertilizerdata);
   const dispatch = useDispatch();
 
@@ -20,7 +19,20 @@ const Fertilizer = () => {
     dispatch(ADD(e));
   };
 
-  const notify = () => toast("Item Add In Your Cart");
+  const notify = () =>
+    toast.success("🦄 Item Add In Your Cart!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      style: {
+        fontSize: "18px",
+      },
+    });
 
   return (
     <Wrapper className="section">
