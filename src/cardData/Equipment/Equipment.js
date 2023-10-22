@@ -8,14 +8,30 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import "../style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Equipment= () => {
+const Equipment = () => {
   const [data, setData] = useState(EquipmentData);
   const dispatch = useDispatch();
 
   const send = (e) => {
     dispatch(ADD(e));
   };
+  const notify = () =>
+    toast.success("🦄 Item Added In Your Cart", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      style: {
+        fontSize: "18px",
+      },
+    });
 
   return (
     <Wrapper className="section">
@@ -23,7 +39,7 @@ const Equipment= () => {
         <Link to="/" style={{ fontSize: 24, color: "grey" }}>
           <BsFillArrowLeftCircleFill /> Home
         </Link>
-        <h2 className="text-center">Tools and Equipment</h2>
+        <h2 className="text-center">Chemical Fertilizer's</h2>
 
         <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
           {data.map((element, id) => {
@@ -45,7 +61,10 @@ const Equipment= () => {
                     <div className="button_div d-flex justify-content-center">
                       <Button
                         variant="primary"
-                        onClick={() => send(element)}
+                        onClick={() => {
+                          send(element);
+                          notify();
+                        }}
                         className="col-lg-12"
                       >
                         Add to Cart
@@ -58,6 +77,7 @@ const Equipment= () => {
           })}
         </div>
       </div>
+      <ToastContainer />
     </Wrapper>
   );
 };
