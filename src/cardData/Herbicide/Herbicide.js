@@ -8,6 +8,8 @@ import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import "../style.css";
 import { useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Herbicide= () => {
   const [data, setData] = useState(HerbicideData);
