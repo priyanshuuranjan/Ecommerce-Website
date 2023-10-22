@@ -9,8 +9,8 @@ import Table from "react-bootstrap/esm/Table";
 import { BsPlusLg } from 'react-icons/bs';
 import { MdArrowBack } from "react-icons/md";
 import {BiMinus } from "react-icons/bi";
-
-// import "./style.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { REMOVE, ADD } from "../redux/actions/action";
 
 const Nav = () => {
@@ -49,6 +49,22 @@ const Nav = () => {
     });
     setPrice(price);
   };
+
+  // toast
+  const notify = () =>
+    toast.success("🦄 Item Added In Your Cart", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      style: {
+        fontSize: "18px",
+      },
+    });
 
   useEffect(() => {
     total();
@@ -460,7 +476,8 @@ const Nav = () => {
                                     cursor: "pointer",
                                     paddingLeft: "10px",
                                   }}
-                                  onClick={() => send(item)}
+                                  onClick={() => {send(item); notify();
+                                  }}
                                 >
                                   <span
                                     style={{
