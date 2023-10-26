@@ -23,7 +23,7 @@ const ProductDetail = () => {
     setData(comparedata);
   };
 
-  // add data
+  // this is used to add the data to the cart
 
   const send = (e) => {
     // console.log(e);
