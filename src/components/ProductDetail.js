@@ -35,7 +35,7 @@ const ProductDetail = () => {
     history("/");
   };
 
-  // remove one
+  // this remove is used to remove the items from cart... 
   const remove = (item) => {
     dispatch(REMOVE(item));
   };
