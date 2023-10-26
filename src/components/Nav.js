@@ -105,23 +105,24 @@ const Nav = () => {
       top: 0;
       right: 0;
       width: 100%;
-      width: 350px;
+      width: 360px;
       height: 100%;
       background: #fff;
-      box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.2);
       z-index: 1000;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 20px;
+      padding: 1px; //TODO slid bar cart ka size yha se change kiye hai phle 20px tha
     }
     .cart-table-header {
       border-bottom: 2px solid #000; /* Add a 2px thick solid black line under the headers */
-      font-weight: bold; /* Make the text bold */
+      font-weight: bold;
     }
 
+    // cart size variable
     .cart-sidebar p {
-      font-size: 18px; // cart size variable
+      font-size: 178x;
       margin-bottom: 7px;
       color: #212529;
       text-align: center;
@@ -152,6 +153,7 @@ const Nav = () => {
     }
 
     /* Styling for the cart icon and item count */
+
     .cart-trolley--link {
       position: relative;
       display: flex;
@@ -161,10 +163,11 @@ const Nav = () => {
       color: #333; /* Color for the cart icon */
     }
 
-    /* getdata.length size */
+    /* getdata.length size icon */
+
     .cart-item-count {
-      font-size: 20px; /* Adjust the font size as needed */
-      font-weight: bold; /* To make it bold as per your previous request */
+      font-size: 20px;
+      font-weight: bold;
     }
 
     .cart-trolley {
@@ -176,7 +179,7 @@ const Nav = () => {
       width: 24px;
       height: 24px;
       position: absolute;
-      background-color: #ff0000; /* Background color for the item count circle */
+      background-color: #ff0000;
       color: #fff; /* Text color for the item count */
       border-radius: 50%;
       display: flex;
@@ -186,6 +189,8 @@ const Nav = () => {
       right: 0;
       font-size: 14px; /* Adjust the font size as needed */
     }
+
+    //!  mobile
 
     .mobile-navbar-btn {
       display: none;
@@ -383,12 +388,14 @@ const Nav = () => {
                 >
                   &#10006;
                 </button> */}
+                {/* 
+                  //! card data size changes from here  */}
 
                 {getdata.length > 0 ? (
                   <div
                     className="card-details"
                     style={{
-                      width: "32rem",
+                      width: "36rem",
                       padding: 10,
                       height: "100%",
                       maxHeight: "100vh", //here i  Set the maximum height equal to the screen height
@@ -397,7 +404,7 @@ const Nav = () => {
                   >
                     <Table>
                       <thead>
-                        <tr style={{ fontSize: 17 }}>
+                        <tr style={{ fontSize: 19 }}>
                           <th className="cart-table-header">
                             <MdArrowBack
                               style={{ cursor: "pointer", fontSize: "25px" }} // Customize the icon size and cursor style
@@ -407,7 +414,7 @@ const Nav = () => {
                           </th>
                           <th
                             className="cart-table-header"
-                            style={{ textAlign: "left", paddingLeft: "50px" }}
+                            style={{ textAlign: "left", paddingLeft: "60px" }}
                           >
                             Items
                           </th>
@@ -439,7 +446,7 @@ const Nav = () => {
                                 style={{
                                   fontSize: 22,
                                   cursor: "pointer",
-                                  marginLeft: 30,
+                                  marginLeft: 40,
                                   width: 100,
                                   cursor: "pointer",
                                 }}
