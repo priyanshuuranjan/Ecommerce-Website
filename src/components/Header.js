@@ -8,7 +8,7 @@ const Header = () => {
     <MainHeader>
       {/* Navlink -->> it is just like <a href="#"></a> but ye page ko reload nhi krene deta hai or ye react router dom se imported hai  */}
       <NavLink to="/">
-        {/* <img src="./images/logos.png" alt="my logo img" /> */}
+        <img src="./images/logo2.png" alt="my logo img" />
       </NavLink>
       <Nav />
     </MainHeader>
