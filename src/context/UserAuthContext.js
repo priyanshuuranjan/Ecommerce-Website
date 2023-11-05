@@ -4,8 +4,6 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
-  GoogleAuthProvider,
-  signInWithPopup,
 } from "firebase/auth";
 import { auth } from "../firebase/Config";
 
@@ -47,7 +45,6 @@ export function UserAuthContextProvider({ children }) {
 export function useUserAuth() {
   return useContext(userAuthContext);
 }
-
 
 
 
