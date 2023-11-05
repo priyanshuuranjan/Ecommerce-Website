@@ -12,10 +12,38 @@ import { BiMinus } from "react-icons/bi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { REMOVE, ADD } from "../redux/actions/action";
+import "./Nav.css";
+
+// firebase import
+import { auth } from "../firebase/Config";
+import { useUserAuth } from "../context/UserAuthContext";
+import { useNavigate } from "react-router";
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+
+  //logout
+  const { logOut, user } = useUserAuth();
+  const [userEmail, setUserEmail] = useState("");
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserEmail(user.email); // Set the userEmail state to the user's email
+      } else {
+        setUserEmail(""); // Clear userEmail when the user is not logged in
+      }
+    });
+  }, []);
 
   const [price, setPrice] = useState(0);
   // console.log(price);
@@ -343,14 +371,41 @@ const Nav = () => {
               About
             </NavLink>
           </li>
+
           <li>
-            <NavLink
-              to="/"
-              className="navbar-link"
-              onClick={() => setMenuIcon(false)}
-            >
-              Login
-            </NavLink>
+            {user ? (
+              <div className="navbar-link user-dropdown">
+                <div className="dropdown">
+                  <button
+                    className="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {userEmail ? userEmail : ""}{" "}
+                    {/* Display the user's email used for login */}
+                  </button>
+                  <div
+                    className="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a className="dropdown-item" onClick={handleLogout}>
+                      Logout
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <NavLink
+                to="/login"
+                className="navbar-link"
+                onClick={() => setMenuIcon(false)}
+              >
+                Login
+              </NavLink>
+            )}
           </li>
           <li>
             <NavLink

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -7,13 +7,19 @@ import { BrowserRouter } from "react-router-dom";
 import store from "./store";
 import { Provider } from "react-redux";
 
+// Import your authentication context provider
+import { UserAuthContextProvider } from "./context/UserAuthContext";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <BrowserRouter>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      {/* Wrap your entire app with the UserAuthContextProvider */}
+      <UserAuthContextProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </UserAuthContextProvider>
     </BrowserRouter>
   </Provider>
 );

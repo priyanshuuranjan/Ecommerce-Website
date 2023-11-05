@@ -1,3 +1,48 @@
+
+/* Add this CSS in your stylesheet or a styled-component's styled component */
+
+/* Dropdown button style */
+.dropdown button {
+  background-color: #fff; /* Background color of the button */
+  color: #333; /* Text color of the button */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Border radius */
+  padding: 8px 16px; /* Padding */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Dropdown menu style */
+.dropdown .dropdown-menu {
+  background-color: #fff; /* Background color of the menu */
+  border: 1px solid #ccc; /* Border color */
+}
+
+.dropdown .dropdown-item {
+  color: #333; /* Text color of the items */
+  padding: 8px 16px; /* Padding for the items */
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-item:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 
 .cart-sidebar {

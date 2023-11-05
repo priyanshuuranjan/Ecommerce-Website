@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Fertilizer from "../../cardData/Chemicals/Fertilizer";
+import Equipment from "../../cardData/Equipment/Equipment";
 
 const Products = () => {
   return <Wrapper>
+    <Fertilizer/>
+    <Equipment/>
   </Wrapper>;
 };
 
