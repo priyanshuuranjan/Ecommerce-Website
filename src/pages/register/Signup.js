@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TextField, Box, Button, Typography, styled } from "@mui/material";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { updateProfile} from "firebase/auth";
 import { auth } from "../../firebase/Config";
 import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../context/UserAuthContext";
