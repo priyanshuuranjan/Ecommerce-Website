@@ -2,7 +2,8 @@ const Cardsdata = [
   {
     id: "dap",
     name: "DAP",
-    imgdata: "/images/chemicals/dap1.PNG",
+    imgdata:
+      "https://m.media-amazon.com/images/I/51CvpJlQs0L._AC_UL320_.jpg",
     address: "20:20:13",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -16,7 +17,7 @@ const Cardsdata = [
   {
     id: "gromor_dap",
     name: "DAP",
-    imgdata: "/images/chemicals/dap2.png",
+    imgdata: "https://m.media-amazon.com/images/I/61A6GsX-opL._AC_UL320_.jpg",
     address: "18:46:0",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -30,7 +31,7 @@ const Cardsdata = [
   {
     id: "mop",
     name: "POTASH",
-    imgdata: "/images/chemicals/mop.PNG",
+    imgdata: "https://kumarfertilizer.netlify.app/images/chemicals/mop.PNG",
     address: "60% k2o",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -58,7 +59,7 @@ const Cardsdata = [
   {
     id: "calcium",
     name: "CALCIUM",
-    imgdata: "/images/chemicals/calcium.jpg",
+    imgdata: "https://m.media-amazon.com/images/I/21KmYsSJQjL._AC_UL320_.jpg",
     address: "",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",

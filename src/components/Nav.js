@@ -13,11 +13,14 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { REMOVE, ADD } from "../redux/actions/action";
 import "./Nav.css";
+import { loadStripe } from "@stripe/stripe-js";
 
 // firebase import
 import { auth } from "../firebase/Config";
 import { useUserAuth } from "../context/UserAuthContext";
 import { useNavigate } from "react-router";
+import { addDoc, collection } from "firebase/firestore";
+import { fireDB } from "../firebase/Config";
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState(false);
@@ -49,6 +52,7 @@ const Nav = () => {
   // console.log(price);
 
   //! this is used to get the  items on the cart ye hm khi v use kr or cards ki item ko khi v get kr skte hai
+
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
 
@@ -97,8 +101,60 @@ const Nav = () => {
   useEffect(() => {
     total();
   }, [total]);
+  // }, [getdata]);
 
-  // working on card menu when we add any item then it show that particular items
+  /**========================================================================
+   *!                           Payment Intigration
+   *========================================================================**/
+   const makePayment = async () => {
+    try {
+      // Prepare the order data
+      const orderInfo = {
+        products: getdata,
+        // You can add more fields like user information, timestamp, etc.
+        // For example: user: user.uid, timestamp: new Date(),
+      };
+
+      // Reference to the "orders" collection in Firestore
+      const ordersRef = collection(fireDB, "orders");
+
+      // Add the order data to Firestore
+      await addDoc(ordersRef, orderInfo);
+
+      // Continue with the existing Stripe payment code
+      const stripe = await loadStripe(
+        "pk_test_51O98QCSACaXpHsJl59PXiB7gh3tYbIryxbYaqFGjuSpaZtoWWzKYjeHlwBXJr4QNYyEMPeBPIlB5PyrFambXb48D002oJk5Ygu"
+      );
+
+      const body = {
+        products: getdata,
+      };
+      const headers = {
+        "Content-Type": "application/json",
+      };
+      const response = await fetch(
+        "http://localhost:7000/api/create-checkout-session",
+        {
+          method: "POST",
+          headers: headers,
+          body: JSON.stringify(body),
+        }
+      );
+
+      const session = await response.json();
+
+      const result = stripe.redirectToCheckout({
+        sessionId: session.id,
+      });
+
+      if (result.error) {
+        console.log(result.error);
+      }
+    } catch (error) {
+      console.error("Error: ", error);
+    }
+  };
+ 
 
   const Nav = styled.nav`
     .navbar-lists {
@@ -373,6 +429,33 @@ const Nav = () => {
           </li>
 
           <li>
+            <NavLink
+              to="/products"
+              className="navbar-link"
+              onClick={() => setMenuIcon(false)}
+            >
+              Products
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/success"
+              className="navbar-link"
+              onClick={() => setMenuIcon(false)}
+            >
+              Order
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className="navbar-link"
+              onClick={() => setMenuIcon(false)}
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li>
             {user ? (
               <div className="navbar-link user-dropdown">
                 <div className="dropdown">
@@ -406,24 +489,6 @@ const Nav = () => {
                 Login
               </NavLink>
             )}
-          </li>
-          <li>
-            <NavLink
-              to="/products"
-              className="navbar-link"
-              onClick={() => setMenuIcon(false)}
-            >
-              Products
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className="navbar-link"
-              onClick={() => setMenuIcon(false)}
-            >
-              Contact
-            </NavLink>
           </li>
           <li>
             <div
@@ -587,10 +652,19 @@ const Nav = () => {
                         ))}
                         <p
                           className="text-center"
-                          style={{ fontWeight: "bold" }}
+                          style={{ fontWeight: "bold", marginTop: "10px" }}
                         >
-                          Total: ₹ {price}
+                          Total: ₹ <span style={{ color: "red" }}>{price}</span>
                         </p>
+                        <th className="text-right">
+                          <button
+                            className="btn btn-success"
+                            onClick={makePayment}
+                            type="button"
+                          >
+                            Checkout
+                          </button>
+                        </th>
                       </tbody>
                     </Table>
                   </div>

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { TextField, Box, Button, Typography, styled } from "@mui/material";
-import { updateProfile} from "firebase/auth";
-import { auth } from "../../firebase/Config";
+import { updateProfile } from "firebase/auth";
+import { auth, fireDB } from "../../firebase/Config";
 import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../context/UserAuthContext";
 import Alert from "@mui/material/Alert";
+import { collection, addDoc } from "firebase/firestore";
 
 const Component = styled(Box)`
   width: 400px;
@@ -52,8 +53,20 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     setError("");
+
     try {
-      await signUp(email, password);
+      // Create the user in Firebase Authentication
+      const userCredential = await signUp(email, password);
+      const user = userCredential.user;
+
+      // Store user data in Firestore
+      await addDoc(collection(fireDB, "users"), {
+        name,
+        email,
+        password,
+        // You can add more fields here if needed
+      });
+
       navigate("/login");
     } catch (err) {
       setError(err.message);
@@ -63,7 +76,7 @@ const Signup = () => {
   return (
     <Component>
       <Box>
-      {error && <Alert variant="danger">{error}</Alert>}
+        {error && <Alert variant="danger">{error}</Alert>}
         <Wrapper>
           <TextField
             variant="outlined"

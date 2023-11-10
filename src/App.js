@@ -27,6 +27,10 @@ import ProtectedRoute from "./protected/ProtectedRoute";
 
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 
+// payment pages
+import Success from "./pages/payment/Success";
+import Cancel from "./pages/payment/Cancel";
+
 const App = () => {
   const theme = {
     colors: {
@@ -57,35 +61,52 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header />
-      
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/product" element={<FeatureProduct />} />
-          <Route exact path="/products" element={<Products />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/Signup" element={<Signup />} />
-          {/* <Route exact path="/" element={<Protected />} /> */}
-          <Route exact path="/*" element={<Error />} />
-          <Route exact path="/footer" element={<Footer />} />
-          <Route exact path="/fertilizer" element={<Fertilizer />} />
-          <Route exact path="/seed" element={<Seed />} />
-          <Route exact path="/equipment" element={<Equipment />} />
-          <Route exact path="/pesticide" element={<Pesticide />} />
-          <Route exact path="/herbicide" element={<Herbicide />} />
-          <Route exact path="/plantNutrition" element={<Plant />} />
-          <Route
-            exact
-            path="/cart/:id"
-            element={
-              <ProtectedRoute>
-                <ProductDetail />
-              </ProtectedRoute>
-            }
-          />
-        </Routes>
- 
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/product" element={<FeatureProduct />} />
+        <Route exact path="/products" element={<Products />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/Signup" element={<Signup />} />
+        {/* <Route exact path="/" element={<Protected />} /> */}
+        <Route exact path="/*" element={<Error />} />
+        <Route exact path="/footer" element={<Footer />} />
+        <Route exact path="/fertilizer" element={<Fertilizer />} />
+        <Route exact path="/seed" element={<Seed />} />
+        <Route exact path="/equipment" element={<Equipment />} />
+        <Route exact path="/pesticide" element={<Pesticide />} />
+        <Route exact path="/herbicide" element={<Herbicide />} />
+        <Route exact path="/plantNutrition" element={<Plant />} />
+        <Route
+          exact
+          path="/success"
+          element={
+            <ProtectedRoute>
+              <Success />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          exact
+          path="/cancel"
+          element={
+            <ProtectedRoute>
+              <Cancel />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          exact
+          path="/cart/:id"
+          element={
+            <ProtectedRoute>
+              <ProductDetail />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
 
       <Footer />
     </ThemeProvider>

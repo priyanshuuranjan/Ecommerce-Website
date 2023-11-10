@@ -40,7 +40,7 @@ const Pesticide = () => {
         <Link to="/" style={{ fontSize: 24, color: "grey" }}>
           <BsFillArrowLeftCircleFill /> Home
         </Link>
-        <h2 className="text-center">Chemical Fertilizer's</h2>
+        <h2 className="text-center">Plant's</h2>
 
         <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
           {data.map((element, id) => {
