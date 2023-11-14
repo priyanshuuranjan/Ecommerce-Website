@@ -1,7 +1,7 @@
 const people = [
   {
     id: 1,
-    image: "/images/Fertilizer.jpg",
+    image: "/images/customer/Person1.jpeg",
     name: "Virendra Singh",
     title: "Owner",
     quote:
@@ -9,7 +9,7 @@ const people = [
   },
   {
     id: 2,
-    image: "/images/profile3.png",
+    image: "/images/profile3.jpg",
     name: "Priyanshu Singh",
     title: "Developer",
     quote:
@@ -17,7 +17,7 @@ const people = [
   },
   {
     id: 3,
-    image: "/images/Person3.jpg",
+    image: "/images/customer/Person3.jpg",
     name: "Amit Singh",
     title: "Product Manager",
     quote:
@@ -25,7 +25,7 @@ const people = [
   },
   {
     id: 4,
-    image: "/images/Person4.JPG",
+    image: "/images/customer/Person4.JPG",
     name: "Adarsh Thakur",
     title: "Review",
     quote:
@@ -33,7 +33,7 @@ const people = [
   },
   {
     id: 5,
-    image: "/images/Person5.JPG",
+    image: "/images/customer/Person5.JPG",
     name: "Mohit Jaikar",
     title: "Review",
     quote:
@@ -41,7 +41,7 @@ const people = [
   },
   {
     id: 6,
-    image: "/images/Person6.jpg",
+    image: "/images/customer/Person6.jpg",
     name: "Rahul Singh",
     title: "Happy customer",
     quote:
@@ -49,7 +49,7 @@ const people = [
   },
   {
     id: 7,
-    image: "/images/Person7.jpg",
+    image: "/images/customer/Person7.jpg",
     name: "Mayank",
     title: "Happy customer",
     quote:
@@ -57,7 +57,7 @@ const people = [
   },
   {
     id: 8,
-    image: "/images/Person8.jpg",
+    image: "/images/customer/Person8.jpg",
     name: "Rupesh Singh",
     title: "Happy customer",
     quote:
@@ -65,7 +65,7 @@ const people = [
   },
   {
     id: 9,
-    image: "/images/Person9.jpg",
+    image: "/images/customer/Person9.jpg",
     name: "Nitesh Bhumihar",
     title: "Happy customer",
     quote:
@@ -73,7 +73,7 @@ const people = [
   },
   {
     id: 10,
-    image: "/images/Person10.jpg",
+    image: "/images/customer/Person10.jpg",
     name: "Raushan Singh",
     title: "Happy customer",
     quote:
@@ -81,7 +81,7 @@ const people = [
   },
   {
     id: 11,
-    image: "/images/Person11.jpg",
+    image: "/images/customer/Person11.jpg",
     name: "Rishav Singh",
     title: "Happy customer",
     quote:
