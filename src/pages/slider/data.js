@@ -1,7 +1,7 @@
 const people = [
   {
     id: 1,
-    image: "/images/fertilizer.jpg",
+    image: "/images/Fertilizer.jpg",
     name: "Virendra Singh",
     title: "Owner",
     quote:
@@ -9,7 +9,7 @@ const people = [
   },
   {
     id: 2,
-    image: "/images/Person2.png",
+    image: "/images/profile3.png",
     name: "Priyanshu Singh",
     title: "Developer",
     quote:
@@ -25,15 +25,15 @@ const people = [
   },
   {
     id: 4,
-    image: "/images/Person4.jpg",
-    name: "Mohit Jaikar",
+    image: "/images/Person4.JPG",
+    name: "Adarsh Thakur",
     title: "Review",
     quote:
       "Discovering this game-changing fertilizer supplier revolutionized my agricultural experience. Quality, affordability, and remarkable results are their hallmarks. The exceptional customer support underscores their commitment to farmers. It's not just a product; it's the key to consistent success in my fields. Highly recommended for elevating your farming endeavors. ",
   },
   {
     id: 5,
-    image: "/images/Person5.jpg",
+    image: "/images/Person5.JPG",
     name: "Mohit Jaikar",
     title: "Review",
     quote:
@@ -49,7 +49,7 @@ const people = [
   },
   {
     id: 7,
-    image: "/images/Person4.jpg",
+    image: "/images/Person7.jpg",
     name: "Mayank",
     title: "Happy customer",
     quote:
@@ -57,7 +57,7 @@ const people = [
   },
   {
     id: 8,
-    image: "/images/Person4.jpg",
+    image: "/images/Person8.jpg",
     name: "Rupesh Singh",
     title: "Happy customer",
     quote:
@@ -65,7 +65,7 @@ const people = [
   },
   {
     id: 9,
-    image: "/images/Person4.jpg",
+    image: "/images/Person9.jpg",
     name: "Nitesh Bhumihar",
     title: "Happy customer",
     quote:
@@ -73,7 +73,7 @@ const people = [
   },
   {
     id: 10,
-    image: "/images/Person4.jpg",
+    image: "/images/Person10.jpg",
     name: "Raushan Singh",
     title: "Happy customer",
     quote:
@@ -81,7 +81,7 @@ const people = [
   },
   {
     id: 11,
-    image: "/images/Person4.jpg",
+    image: "/images/Person11.jpg",
     name: "Rishav Singh",
     title: "Happy customer",
     quote:
