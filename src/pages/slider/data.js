@@ -21,15 +21,31 @@ const people = [
     name: "Amit Singh",
     title: "Product Manager",
     quote:
-    "As the Product Manager, I drive our company's path, crafting innovative products that redefine market experiences. Specializing in strategic development, we offer solutions tailored to diverse consumer needs. Leadership in product management extends beyond features; it's about creating a legacy marked by innovation, usability, and customer satisfaction. Our mission is clear: to deliver standout products that resonate in the market. As Product Manager, I ensure each project reflects our commitment to excellence, fostering a product landscape where our creations make a lasting impact on consumers and industry standards. "
+      "As the Product Manager, I drive our company's path, crafting innovative products that redefine market experiences. Specializing in strategic development, we offer solutions tailored to diverse consumer needs. Leadership in product management extends beyond features; it's about creating a legacy marked by innovation, usability, and customer satisfaction. Our mission is clear: to deliver standout products that resonate in the market. As Product Manager, I ensure each project reflects our commitment to excellence, fostering a product landscape where our creations make a lasting impact on consumers and industry standards. ",
   },
   {
     id: 4,
     image: "/images/Person4.jpg",
-    name: "James Van",
-    title: "Vice President",
+    name: "Mohit Jaikar",
+    title: "Review",
     quote:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "Kumar Fertilizer shop is a game-changer! Unbeatable quality and affordability have transformed my yields. Their dedicated customer support showcases genuine care. Kumar Fertilizer is my go-to for consistency and reliability. It's not just a product; it's the key to my field's success. Highly recommended for any farmer aiming for excellence in agriculture.",
+  },
+  {
+    id: 5,
+    image: "/images/Person4.jpg",
+    name: "Rahul Singh",
+    title: "Happy customer",
+    quote:
+      "Kumar Fertilizer has transformed my farm with unparalleled quality and affordability. The remarkable boost in yields is a testament to its efficacy. Their customer support's dedication is admirable. Kumar Fertilizer is my constant, ensuring consistency and success in my fields. Highly recommend it for farmers seeking excellence in agriculture. ",
+  },
+  {
+    id: 6,
+    image: "/images/Person4.jpg",
+    name: "Mayank",
+    title: "Happy customer",
+    quote:
+      "Revolutionized my farm! Unmatched quality and affordable prices from this fertilizer supplier significantly boosted my yields. Their dedicated customer support reflects genuine care for farmers. It's the key to my field's success—consistency and reliability at its best. Highly recommended for any farmer aiming for excellence in agriculture ",
   },
 ];
 
