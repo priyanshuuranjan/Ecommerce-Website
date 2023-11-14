@@ -33,7 +33,7 @@ const people = [
   },
   {
     id: 5,
-    image: "/images/Person4.jpg",
+    image: "/images/Person5.jpg",
     name: "Mohit Jaikar",
     title: "Review",
     quote:
@@ -41,7 +41,7 @@ const people = [
   },
   {
     id: 6,
-    image: "/images/Person4.jpg",
+    image: "/images/Person6.jpg",
     name: "Rahul Singh",
     title: "Happy customer",
     quote:
