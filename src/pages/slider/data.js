@@ -13,7 +13,7 @@ const people = [
     name: "Priyanshu Singh",
     title: "Developer",
     quote:
-      "As CEO and developer, I drive our company's tech journey, crafting innovative websites that redefine online experiences. Specializing in cutting-edge development, we offer tailored digital solutions. Leadership is more than coding; it's about shaping a digital legacy marked by creativity, functionality, and client satisfaction. Our mission is clear: to provide top-notch websites that stand out. As both developer and CEO, I ensure each project reflects our commitment to excellence and tech advancement, fostering a digital landscape where our creations make a lasting impact. ",
+      "As CEO and developer, I lead our tech journey, creating innovative websites for unparalleled online experiences. Specializing in cutting-edge development, we provide bespoke digital solutions. Beyond coding, leadership means shaping a digital legacy marked by creativity, functionality, and client satisfaction. Our mission: delivering standout websites that reflect excellence and tech advancement, leaving a lasting impact. ",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const people = [
     name: "Amit Singh",
     title: "Product Manager",
     quote:
-      "As the Product Manager, I drive our company's path, crafting innovative products that redefine market experiences. Specializing in strategic development, we offer solutions tailored to diverse consumer needs. Leadership in product management extends beyond features; it's about creating a legacy marked by innovation, usability, and customer satisfaction. Our mission is clear: to deliver standout products that resonate in the market. As Product Manager, I ensure each project reflects our commitment to excellence, fostering a product landscape where our creations make a lasting impact on consumers and industry standards. ",
+      "As Product Manager, I craft innovative products, tailoring solutions for diverse consumer needs. Leading strategic development, I aim for a legacy marked by innovation, usability, and customer satisfaction. Our mission: deliver standout products that resonate in the market, reflecting our commitment to excellence, making a lasting impact on consumers and industry standards.",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const people = [
     name: "Adarsh Thakur",
     title: "Product Manager",
     quote:
-      "Discovering this game-changing fertilizer supplier revolutionized my agricultural experience. Quality, affordability, and remarkable results are their hallmarks. The exceptional customer support underscores their commitment to farmers. It's not just a product; it's the key to consistent success in my fields. Highly recommended for elevating your farming endeavors. ",
+      "As Product Manager, I drive our company's innovation, creating solutions that resonate with diverse consumer needs. Beyond features, my focus is on a legacy of innovation, usability, and customer satisfaction. Our mission: deliver standout products, reflecting our commitment to excellence and making a lasting impact on consumers and industry standards. ",
   },
   {
     id: 5,
