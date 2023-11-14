@@ -5,7 +5,7 @@ const people = [
     name: "Virendra Singh",
     title: "Owner",
     quote:
-      "Since 2002, as the owner of Kumar Fertilizer, I lead India's premier online agricultural supplier. Specializing in a complete range of farming essentials—seeds, fertilizers, pesticides, plant growth regulators, irrigation, and tools—our mission is rooted in providing quality at competitive prices with dedicated customer support. Kumar Fertilizer is more than a business; it's a commitment to excellence, agricultural success, and empowering farmers nationwide. Our legacy thrives on delivering reliable, high-quality products, fostering prosperity in every field we touch. ",
+      "Since 2002, I've steered Kumar Fertilizer as India's top online agri-supplier. We specialize in seeds, fertilizers, pesticides, and more, committed to quality and affordability. Our mission is agricultural excellence, empowering farmers with reliable products and unwavering customer support. Kumar Fertilizer is more than a business; it's a legacy of prosperity in every field. ",
   },
   {
     id: 2,
