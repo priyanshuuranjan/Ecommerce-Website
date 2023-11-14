@@ -3,11 +3,13 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../styles/Button";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import Slider from "../slider/Slider"
 
 const Footer = () => {
   return (
     <>
       <Wrapper>
+      <Slider/>
         <section className="contact-short">
           <div className="grid grid-two-column">
             <div>
@@ -89,7 +91,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          
         </footer>
+        
       </Wrapper>
     </>
   );
