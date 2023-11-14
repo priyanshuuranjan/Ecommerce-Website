@@ -1,7 +1,7 @@
 const people = [
   {
     id: 1,
-    image: "/images/customer/Person1.jpeg",
+    image: "/images/customer/Person1.png",
     name: "Virendra Singh",
     title: "Owner",
     quote:
@@ -9,7 +9,7 @@ const people = [
   },
   {
     id: 2,
-    image: "/images/profile3.jpg",
+    image: "/images/customer/Person2.jpg",
     name: "Priyanshu Singh",
     title: "Developer",
     quote:
