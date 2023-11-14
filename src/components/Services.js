@@ -3,6 +3,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { GiBoxUnpacking } from "react-icons/gi";
 import { GiReceiveMoney } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri";
+import Slider from "../pages/slider/Slider"
 
 const Services = () => {
   return (
@@ -50,6 +51,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Slider/>
     </Wrapper>
   );
 };
