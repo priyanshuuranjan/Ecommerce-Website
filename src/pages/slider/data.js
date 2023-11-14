@@ -27,7 +27,7 @@ const people = [
     id: 4,
     image: "/images/customer/Person4.JPG",
     name: "Adarsh Thakur",
-    title: "Review",
+    title: "Product Manager",
     quote:
       "Discovering this game-changing fertilizer supplier revolutionized my agricultural experience. Quality, affordability, and remarkable results are their hallmarks. The exceptional customer support underscores their commitment to farmers. It's not just a product; it's the key to consistent success in my fields. Highly recommended for elevating your farming endeavors. ",
   },
@@ -35,7 +35,7 @@ const people = [
     id: 5,
     image: "/images/customer/Person5.JPG",
     name: "Mohit Jaikar",
-    title: "Review",
+    title: "Reviewer",
     quote:
       "Kumar Fertilizer shop is a game-changer! Unbeatable quality and affordability have transformed my yields. Their dedicated customer support showcases genuine care. Kumar Fertilizer is my go-to for consistency and reliability. It's not just a product; it's the key to my field's success. Highly recommended for any farmer aiming for excellence in agriculture.",
   },
