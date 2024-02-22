@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
+import { IoIosCloseCircle } from "react-icons/io";
 import { DLT } from "../redux/actions/action";
 import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
@@ -86,7 +87,7 @@ const Nav = () => {
   const notify = () =>
     toast.success("🦄 Item Added In Your Cart", {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -106,7 +107,7 @@ const Nav = () => {
   /**========================================================================
    *!                           Payment Intigration
    *========================================================================**/
-   const makePayment = async (user) => {
+  const makePayment = async (user) => {
     try {
       // Prepare the order data
       const orderInfo = {
@@ -115,16 +116,18 @@ const Nav = () => {
         // You can add more fields like timestamp, order status, etc.
         // For example: timestamp: new Date(), status: 'pending',
       };
-  
+
       // Reference to the "orders" collection in Firestore
       const ordersRef = collection(fireDB, "orders");
-  
+
       // Add the order data to Firestore
       await addDoc(ordersRef, orderInfo);
-  
+
       // Continue with the existing Stripe payment code
-      const stripe = await loadStripe("51O98QCSACaXpHsJl59PXiB7gh3tYbIryxbYaqFGjuSpaZtoWWzKYjeHlwBXJr4QNYyEMPeBPIlB5PyrFambXb48D002oJk5Ygu");
-  
+      const stripe = await loadStripe(
+        "51O98QCSACaXpHsJl59PXiB7gh3tYbIryxbYaqFGjuSpaZtoWWzKYjeHlwBXJr4QNYyEMPeBPIlB5PyrFambXb48D002oJk5Ygu"
+      );
+
       const body = {
         products: getdata,
         user: user.email,
@@ -140,13 +143,13 @@ const Nav = () => {
           body: JSON.stringify(body),
         }
       );
-  
+
       const session = await response.json();
-  
+
       const result = stripe.redirectToCheckout({
         sessionId: session.id,
       });
-  
+
       if (result.error) {
         console.log(result.error);
       }
@@ -154,9 +157,6 @@ const Nav = () => {
       console.error("Error: ", error);
     }
   };
-  
-  
-  
 
   const Nav = styled.nav`
     .navbar-lists {
@@ -504,12 +504,18 @@ const Nav = () => {
 
             {isCartOpen && (
               <div className="cart-sidebar">
-                {/* <button
-                  onClick={() => setIsCartOpen(false)}
-                  className="cart-close-button"
-                >
-                  &#10006;
-                </button> */}
+                {getdata.length > 0 ? (
+                  <div className="card-details">
+                    {/* Table of Cart Items */}
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setIsCartOpen(false)}
+                    className="cart-close-button"
+                  >
+                    <IoIosCloseCircle style={{ fontSize: "30px" }} />
+                  </button>
+                )}
                 {/* 
                   //! card data size changes from here  */}
 

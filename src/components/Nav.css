@@ -1,26 +1,25 @@
 
-/* Add this CSS in your stylesheet or a styled-component's styled component */
 
 /* Dropdown button style */
 .dropdown button {
-  background-color: #fff; /* Background color of the button */
-  color: #333; /* Text color of the button */
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 4px; /* Border radius */
-  padding: 8px 16px; /* Padding */
+  background-color: #fff; 
+  color: #333; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  padding: 8px 16px; 
   font-weight: bold;
   cursor: pointer;
 }
 
 /* Dropdown menu style */
 .dropdown .dropdown-menu {
-  background-color: #fff; /* Background color of the menu */
-  border: 1px solid #ccc; /* Border color */
+  background-color: #fff; 
+  border: 1px solid #ccc; 
 }
 
 .dropdown .dropdown-item {
-  color: #333; /* Text color of the items */
-  padding: 8px 16px; /* Padding for the items */
+  color: #333; 
+  padding: 8px 16px;
   text-decoration: none;
   display: block;
   cursor: pointer;
@@ -30,18 +29,37 @@
   background-color: #f0f0f0; /* Background color on hover */
 }
 
+/* to close the button when cart is empty*/
 
 
+/* Media query for desktop view */
+@media (min-width: 768px) {
+  .cart-close-button {
+    display: block; /* Show the button for desktop view */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
 
-
-
-
-
-
-
-
-
-
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .cart-close-button {
+    display: block;
+    position: fixed;
+    top: 15px; /* Adjust position for mobile view */
+    left: 10%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    z-index: 999;
+  }
+}
 
 /* 
 
