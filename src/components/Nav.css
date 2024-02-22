@@ -1,36 +1,6 @@
 
 
-/* Dropdown button style */
-.dropdown button {
-  background-color: #fff; 
-  color: #333; 
-  border: 1px solid #ccc;
-  border-radius: 4px; 
-  padding: 8px 16px; 
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Dropdown menu style */
-.dropdown .dropdown-menu {
-  background-color: #fff; 
-  border: 1px solid #ccc; 
-}
-
-.dropdown .dropdown-item {
-  color: #333; 
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
-}
-
-.dropdown .dropdown-item:hover {
-  background-color: #f0f0f0; /* Background color on hover */
-}
-
 /* to close the button when cart is empty*/
-
 
 /* Media query for desktop view */
 @media (min-width: 768px) {
@@ -60,6 +30,18 @@
     z-index: 999;
   }
 }
+
+/* Drop Down for phn view */
+
+/* @media screen and (min-width: 400px) {
+  .dropdown-button {
+    padding: 6px 12px;
+  }
+
+  .dropdown-item {
+    padding: 6px 12px;
+  }
+} */
 
 /* 
 

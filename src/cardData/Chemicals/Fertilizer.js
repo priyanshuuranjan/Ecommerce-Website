@@ -10,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./Fertilizer.css"
+import "./Fertilizer.css";
 
 const Fertilizer = () => {
   const [data, setData] = useState(fertilizerdata);
@@ -47,10 +47,7 @@ const Fertilizer = () => {
           {data.map((element, id) => {
             return (
               <>
-                <Card
-                 
-                  className="mx-2 mt-4 card_style"
-                >
+                <Card className="mx-2 mt-4 card_style">
                   <Card.Img
                     variant="top"
                     src={element.imgdata}
@@ -101,7 +98,6 @@ const Wrapper = styled.section`
     transform: scale(1.2);
     transition: transform 0.4s;
   }
-  
 
   figure {
     width: auto;
@@ -193,6 +189,5 @@ const Wrapper = styled.section`
     }
   }
 `;
-
 
 export default Fertilizer;

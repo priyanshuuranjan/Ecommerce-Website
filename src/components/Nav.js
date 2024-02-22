@@ -55,7 +55,7 @@ const Nav = () => {
   //! this is used to get the  items on the cart ye hm khi v use kr or cards ki item ko khi v get kr skte hai
 
   const getdata = useSelector((state) => state.cartreducer.carts);
-  console.log(getdata);
+  // console.log(getdata);
 
   const dispatch = useDispatch();
 
@@ -338,7 +338,6 @@ const Nav = () => {
         }
       }
 
-
       .active .mobile-nav-icon {
         display: none;
         font-size: 4.2rem;
@@ -406,7 +405,6 @@ const Nav = () => {
         padding: 0.8rem 1.4rem;
       }
     }
-    
   `;
 
   return (
@@ -459,41 +457,30 @@ const Nav = () => {
               Contact
             </NavLink>
           </li>
-          <li>
-            {user ? (
-              <div className="navbar-link user-dropdown">
-                <div className="dropdown">
-                  <button
-                    className="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    {userEmail ? userEmail : ""}{" "}
-                    {/* Display the user's email used for login */}
-                  </button>
-                  <div
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <a className="dropdown-item" onClick={handleLogout}>
+          <nav className="navbar">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                {user ? (
+                  <div className="navbar-link">
+                    <button
+                      className="btn btn-secondary"
+                      onClick={handleLogout}
+                    >
                       Logout
-                    </a>
+                    </button>
                   </div>
-                </div>
-              </div>
-            ) : (
-              <NavLink
-                to="/login"
-                className="navbar-link"
-                onClick={() => setMenuIcon(false)}
-              >
-                Login
-              </NavLink>
-            )}
-          </li>
+                ) : (
+                  <NavLink
+                    to="/login"
+                    className="navbar-link"
+                    onClick={() => setMenuIcon(false)}
+                  >
+                    Login
+                  </NavLink>
+                )}
+              </li>
+            </ul>
+          </nav>
           <li>
             <div
               className="navbar-link cart-trolley--link"

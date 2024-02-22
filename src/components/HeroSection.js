@@ -20,12 +20,11 @@ const HeroSection = ({ myData }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Increment currentImageIndex, and loop back to 0 if it exceeds the length of images array
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []); // Empty dependency array to run only once on component mount
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Wrapper>
@@ -94,6 +93,7 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
   }
+
   figure {
     position: relative;
 
@@ -108,24 +108,30 @@ const Wrapper = styled.section`
       z-index: -1;
     }
   }
+
   .img-style {
     width: 100%;
     height: auto;
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 4rem 0;
+
     .grid {
-      gap: 10rem;
+      gap: 5rem;
     }
 
+    .hero-section-data p {
+      margin: 2rem 0;
+    }
+    /* this the background blue card */
     figure::after {
-      content: "";
-      width: 50%;
-      height: 100%;
-      left: 0;
-      top: 10%;
-      /* bottom: 10%; */
-      background-color: rgba(81, 56, 238, 0.4);
+      // content: "";
+      // width: 50%;
+      // height: 100%;
+      // left: 40;
+      // top: 50%;
+      // background-color: rgba(81, 56, 238, 0.4);
     }
   }
 `;
