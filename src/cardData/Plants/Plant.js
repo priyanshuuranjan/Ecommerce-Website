@@ -19,20 +19,20 @@ const Pesticide = () => {
     dispatch(ADD(e));
   };
 
-   const notify = () =>
-    toast.success("🦄 Item Added In Your Cart", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-      style: {
-        fontSize: "18px",
-      },
-    });
+  const notify = () =>
+  toast.success("Item Added 🛒", {
+    position: "top-center",
+    autoClose: 2000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    style: {
+      fontSize: "18px",
+    },
+  });
 
   return (
     <Wrapper className="section">
@@ -47,7 +47,7 @@ const Pesticide = () => {
             return (
               <>
                 <Card
-                  style={{ width: "22rem" }}
+                  // style={{ width: "20rem" }}
                   className="mx-2 mt-4 card_style"
                 >
                   <Card.Img

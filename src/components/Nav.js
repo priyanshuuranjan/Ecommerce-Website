@@ -338,6 +338,7 @@ const Nav = () => {
         }
       }
 
+
       .active .mobile-nav-icon {
         display: none;
         font-size: 4.2rem;
@@ -405,6 +406,7 @@ const Nav = () => {
         padding: 0.8rem 1.4rem;
       }
     }
+    
   `;
 
   return (

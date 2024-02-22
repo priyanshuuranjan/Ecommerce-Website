@@ -19,9 +19,9 @@ const Herbicide= () => {
     dispatch(ADD(e));
   };
   const notify = () =>
-  toast.success("🦄 Item Added In Your Cart", {
+  toast.success("Item Added 🛒", {
     position: "top-center",
-    autoClose: 5000,
+    autoClose: 2000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -46,7 +46,7 @@ return (
           return (
             <>
               <Card
-                style={{ width: "22rem" }}
+               
                 className="mx-2 mt-4 card_style"
               >
                 <Card.Img

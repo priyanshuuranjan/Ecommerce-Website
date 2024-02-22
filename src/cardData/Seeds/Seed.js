@@ -20,9 +20,9 @@ const Seed = () => {
   };
 
   const notify = () =>
-    toast.success("🦄 Item Added In Your Cart", {
+    toast.success("Item Added 🛒", {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -47,7 +47,7 @@ const Seed = () => {
             return (
               <>
                 <Card
-                  style={{ width: "22rem" }}
+                  // style={{ width: "20rem" }}
                   className="mx-2 mt-4 card_style"
                 >
                   <Card.Img

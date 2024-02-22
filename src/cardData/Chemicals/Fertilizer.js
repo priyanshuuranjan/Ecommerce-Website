@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { ADD } from "../../redux/actions/action";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./Fertilizer.css"
 
 const Fertilizer = () => {
   const [data, setData] = useState(fertilizerdata);
@@ -20,9 +21,9 @@ const Fertilizer = () => {
   };
 
   const notify = () =>
-    toast.success("🦄 Item Added In Your Cart", {
+    toast.success("Item Added 🛒", {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -47,7 +48,7 @@ const Fertilizer = () => {
             return (
               <>
                 <Card
-                  style={{ width: "22rem" }}
+                 
                   className="mx-2 mt-4 card_style"
                 >
                   <Card.Img
@@ -100,6 +101,7 @@ const Wrapper = styled.section`
     transform: scale(1.2);
     transition: transform 0.4s;
   }
+  
 
   figure {
     width: auto;
@@ -191,5 +193,6 @@ const Wrapper = styled.section`
     }
   }
 `;
+
 
 export default Fertilizer;

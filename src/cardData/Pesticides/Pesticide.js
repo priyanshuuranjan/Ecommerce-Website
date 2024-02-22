@@ -11,7 +11,7 @@ import { ADD } from "../../redux/actions/action";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Pesticide= () => {
+const Pesticide = () => {
   const [data, setData] = useState(PesticideData);
   const dispatch = useDispatch();
 
@@ -20,66 +20,66 @@ const Pesticide= () => {
   };
 
   const notify = () =>
-  toast.success("🦄 Item Added In Your Cart", {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-    style: {
-      fontSize: "18px",
-    },
-  });
+    toast.success("Item Added 🛒", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      style: {
+        fontSize: "18px",
+      },
+    });
 
-return (
-  <Wrapper className="section">
-    <div className="container mt-3">
-      <Link to="/" style={{ fontSize: 24, color: "grey" }}>
-        <BsFillArrowLeftCircleFill /> Home
-      </Link>
-      <h2 className="text-center">Pesticide's</h2>
+  return (
+    <Wrapper className="section">
+      <div className="container mt-3">
+        <Link to="/" style={{ fontSize: 24, color: "grey" }}>
+          <BsFillArrowLeftCircleFill /> Home
+        </Link>
+        <h2 className="text-center">Pesticide's</h2>
 
-      <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
-        {data.map((element, id) => {
-          return (
-            <>
-              <Card
-                style={{ width: "22rem" }}
-                className="mx-2 mt-4 card_style"
-              >
-                <Card.Img
-                  variant="top"
-                  src={element.imgdata}
-                  style={{ height: "16rem" }}
-                  className="mt-3"
-                />
-                <Card.Body>
-                  <Card.Title>{element.name}</Card.Title>
-                  <Card.Text>Price: ₹ {element.price}</Card.Text>
-                  <div className="button_div d-flex justify-content-center">
-                    <Button
-                      variant="primary"
-                      onClick={() => {
-                        send(element);
-                        notify();
-                      }}
-                      className="col-lg-12"
-                    >
-                      Add to Cart
-                    </Button>
-                  </div>
-                </Card.Body>
-              </Card>
-            </>
-          );
-        })}
+        <div className="grid grid-three-column row d-flex justify-content-center align-items-center">
+          {data.map((element, id) => {
+            return (
+              <>
+                <Card
+                  // style={{ width: "20rem" }}
+                  className="mx-2 mt-4 card_style"
+                >
+                  <Card.Img
+                    variant="top"
+                    src={element.imgdata}
+                    style={{ height: "16rem" }}
+                    className="mt-3"
+                  />
+                  <Card.Body>
+                    <Card.Title>{element.name}</Card.Title>
+                    <Card.Text>Price: ₹ {element.price}</Card.Text>
+                    <div className="button_div d-flex justify-content-center">
+                      <Button
+                        variant="primary"
+                        onClick={() => {
+                          send(element);
+                          notify();
+                        }}
+                        className="col-lg-12"
+                      >
+                        Add to Cart
+                      </Button>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </>
+            );
+          })}
+        </div>
       </div>
-    </div>
-    <ToastContainer />
-  </Wrapper>
+      <ToastContainer />
+    </Wrapper>
   );
 };
 
