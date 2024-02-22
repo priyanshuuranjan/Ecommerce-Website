@@ -106,28 +106,28 @@ const Nav = () => {
   /**========================================================================
    *!                           Payment Intigration
    *========================================================================**/
-   const makePayment = async () => {
+   const makePayment = async (user) => {
     try {
       // Prepare the order data
       const orderInfo = {
         products: getdata,
-        // You can add more fields like user information, timestamp, etc.
-        // For example: user: user.uid, timestamp: new Date(),
+        user: user.email, // Assuming user is an object with an email property
+        // You can add more fields like timestamp, order status, etc.
+        // For example: timestamp: new Date(), status: 'pending',
       };
-
+  
       // Reference to the "orders" collection in Firestore
       const ordersRef = collection(fireDB, "orders");
-
+  
       // Add the order data to Firestore
       await addDoc(ordersRef, orderInfo);
-
+  
       // Continue with the existing Stripe payment code
-      const stripe = await loadStripe(
-        "pk_test_51O98QCSACaXpHsJl59PXiB7gh3tYbIryxbYaqFGjuSpaZtoWWzKYjeHlwBXJr4QNYyEMPeBPIlB5PyrFambXb48D002oJk5Ygu"
-      );
-
+      const stripe = await loadStripe("51O98QCSACaXpHsJl59PXiB7gh3tYbIryxbYaqFGjuSpaZtoWWzKYjeHlwBXJr4QNYyEMPeBPIlB5PyrFambXb48D002oJk5Ygu");
+  
       const body = {
         products: getdata,
+        user: user.email,
       };
       const headers = {
         "Content-Type": "application/json",
@@ -140,13 +140,13 @@ const Nav = () => {
           body: JSON.stringify(body),
         }
       );
-
+  
       const session = await response.json();
-
+  
       const result = stripe.redirectToCheckout({
         sessionId: session.id,
       });
-
+  
       if (result.error) {
         console.log(result.error);
       }
@@ -154,7 +154,9 @@ const Nav = () => {
       console.error("Error: ", error);
     }
   };
- 
+  
+  
+  
 
   const Nav = styled.nav`
     .navbar-lists {

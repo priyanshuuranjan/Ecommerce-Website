@@ -131,3 +131,49 @@ export default Success;
 // }
 
 // export default Success;
+// import React, { useEffect, useState } from 'react';
+// import { collection, getDocs } from 'firebase/firestore';
+// import { fireDB } from '../../firebase/Config';
+// import './Success.css'; // Import the CSS file
+
+// const Success = () => {
+//   const [orders, setOrders] = useState([]);
+
+//   useEffect(() => {
+//     // ... (your existing code to fetch orders from Firebase)
+
+//   }, []);
+
+//   return (
+//     <div id="success-container">
+//       <h1>Success</h1>
+//       <h2>Your Orders:</h2>
+//       {orders.map((order, index) => (
+//         <div className="order" key={index}>
+//           <h3>Order #{index + 1}</h3>
+//           <ul>
+//             {order.products.map((product, productIndex) => (
+//               <li key={productIndex}>
+//                 <div className="product-info">
+//                   <img src={product.imgdata} alt={`Product Image - ${product.name}`} />
+//                   <div>
+//                     <strong>Name:</strong> {product.name}<br />
+//                     <strong>Price:</strong> {product.price}<br />
+//                     <strong>Quantity:</strong> {product.qnty}<br />
+//                     <strong>Description:</strong> {product.address}<br />
+//                     {/* Add more fields as needed */}
+//                   </div>
+//                 </div>
+//               </li>
+//             ))}
+//             <li className="total-price">
+//               <strong>Total Price:</strong> {order.price}
+//             </li>
+//           </ul>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+// export default Success;
